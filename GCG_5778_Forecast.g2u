@@ -1,0 +1,2351 @@
+Program.Sub.ScreenSU.Start
+Gui.frmUpload..Create
+Gui.frmUpload..Caption("Upload Screen")
+Gui.frmUpload..Size(18015,10695)
+Gui.frmUpload..MinX(0)
+Gui.frmUpload..MinY(0)
+Gui.frmUpload..Position(0,0)
+Gui.frmUpload..BackColor(-2147483633)
+Gui.frmUpload..MaxButton(False)
+Gui.frmUpload..MousePointer(0)
+Gui.frmUpload..Event(UnLoad,frmUpload_UnLoad)
+Gui.frmUpload.GsGrid.Create(GsGridControl)
+Gui.frmUpload.GsGrid.Size(17370,9180)
+Gui.frmUpload.GsGrid.Position(270,795)
+Gui.frmUpload.lbl1.Create(Label,"File name :",True,1215,255,0,300,330,True,0,"Arial",8,-2147483633,0)
+Gui.frmUpload.txtfilename.Create(TextBox,"",True,6240,300,0,1215,255,True,0,"Arial",8,-2147483643,1)
+Gui.frmUpload.txtfilename.Locked(True)
+Gui.frmUpload.cmdupload.Create(Button)
+Gui.frmUpload.cmdupload.Size(1500,375)
+Gui.frmUpload.cmdupload.Position(7545,225)
+Gui.frmUpload.cmdupload.Caption("&Browse")
+Gui.frmUpload.cmdupload.Event(Click,cmdupload_Click)
+Gui.frmUpload.cmdSave.Create(Button)
+Gui.frmUpload.cmdSave.Size(930,375)
+Gui.frmUpload.cmdSave.Position(16680,345)
+Gui.frmUpload.cmdSave.Caption("Save")
+Gui.frmUpload.cmdSave.Event(Click,cmdSave_Click)
+Gui.frmUpload.cmdGSSHist.Create(Button)
+Gui.frmUpload.cmdGSSHist.Visible(False)
+Gui.frmUpload.cmdGSSHist.Size(1890,375)
+Gui.frmUpload.cmdGSSHist.Position(14430,315)
+Gui.frmUpload.cmdGSSHist.Caption("Load GSS Sales Hist")
+Gui.frmUpload.cmdGSSHist.Event(Click,cmdGSSHist_Click)
+Gui.frmCALC..Create
+Gui.frmCALC..Caption("Reorder Point/Max Calculator ")
+Gui.frmCALC..Size(4380,2370)
+Gui.frmCALC..MinX(0)
+Gui.frmCALC..MinY(0)
+Gui.frmCALC..Position(0,0)
+Gui.frmCALC..BackColor(-2147483633)
+Gui.frmCALC..MaxButton(False)
+Gui.frmCALC..MinButton(False)
+Gui.frmCALC..MousePointer(0)
+Gui.frmCALC..Event(UnLoad,frmUpload_UnLoad)
+Gui.frmCALC.optPEAK.Create(Option)
+Gui.frmCALC.optPEAK.Size(1575,255)
+Gui.frmCALC.optPEAK.Position(195,300)
+Gui.frmCALC.optPEAK.Caption(" PEAK")
+Gui.frmCALC.optAverage.Create(Option)
+Gui.frmCALC.optAverage.Size(1575,255)
+Gui.frmCALC.optAverage.Position(210,750)
+Gui.frmCALC.optAverage.Caption("AVERAGE")
+Gui.frmCALC.cmdOKCALC.Create(Button)
+Gui.frmCALC.cmdOKCALC.Size(855,375)
+Gui.frmCALC.cmdOKCALC.Position(135,1260)
+Gui.frmCALC.cmdOKCALC.Caption("OK")
+Gui.frmCALC.cmdOKCALC.Event(Click,cmdOKCALC_Click)
+Gui.ReOrderMAX_Maint..Create
+Gui.ReOrderMAX_Maint..Caption("ReOrder/MAX Maintenance Screen")
+Gui.ReOrderMAX_Maint..Size(11040,10080)
+Gui.ReOrderMAX_Maint..MinX(0)
+Gui.ReOrderMAX_Maint..MinY(0)
+Gui.ReOrderMAX_Maint..Position(0,0)
+Gui.ReOrderMAX_Maint..BackColor(-2147483633)
+Gui.ReOrderMAX_Maint..MousePointer(0)
+Gui.ReOrderMAX_Maint..MaxButton(False)
+Gui.ReOrderMAX_Maint..MinButton(False)
+Gui.ReOrderMAX_Maint..Event(UnLoad,frmUpload_UnLoad)
+Gui.ReOrderMAX_Maint.cmdSave_RMMaint.Create(Button)
+Gui.ReOrderMAX_Maint.cmdSave_RMMaint.Size(855,375)
+Gui.ReOrderMAX_Maint.cmdSave_RMMaint.Position(9750,75)
+Gui.ReOrderMAX_Maint.cmdSave_RMMaint.Caption("Save")
+Gui.ReOrderMAX_Maint.cmdSave_RMMaint.Event(Click,cmdSave_RMMaint_Click)
+Gui.ReOrderMAX_Maint.GsGrid_Maint.Create(GsGridControl)
+Gui.ReOrderMAX_Maint.GsGrid_Maint.Size(10425,8715)
+Gui.ReOrderMAX_Maint.GsGrid_Maint.Position(150,585)
+Gui.ReOrderMAX_Maint.GsGrid_Maint.Event(RowCellClick,GsGrid_Maint_RowCellClick)
+Gui.ReOrderMAX_Maint.GsGrid_Maint.Event(CellValueChanged,GsGrid_Maint_CellValueChanged)
+Gui.frmWO..Create
+Gui.frmWO..Caption("WO Dashboard")
+Gui.frmWO..Size(20715,13125)
+Gui.frmWO..MinX(0)
+Gui.frmWO..MinY(0)
+Gui.frmWO..Position(0,0)
+Gui.frmWO..BackColor(-2147483633)
+Gui.frmWO..MousePointer(0)
+Gui.frmWO..Event(UnLoad,frmWO_UnLoad)
+Gui.frmWO.GsGridWO.Create(GsGridControl)
+Gui.frmWO.GsGridWO.Size(20265,11805)
+Gui.frmWO.GsGridWO.Position(135,540)
+Gui.frmWO.GsGridWO.Event(CellValueChanged,GsGridWO_CellValueChanged)
+Gui.frmWO.GsGridWO.Event(RowCellClick,GsGridWO_RowCellClick)
+Gui.frmWO.cmdWOGEN.Create(Button)
+Gui.frmWO.cmdWOGEN.Size(1530,375)
+Gui.frmWO.cmdWOGEN.Position(18810,45)
+Gui.frmWO.cmdWOGEN.Caption("Generate WO")
+Gui.frmWO.cmdWOGEN.Event(Click,cmdWOGEN_Click)
+Gui.frmWO.dtpCutoff.Create(DatePicker)
+Gui.frmWO.dtpCutoff.Size(1425,285)
+Gui.frmWO.dtpCutoff.Position(1320,105)
+Gui.frmWO.lbl1.Create(Label,"Cut Off Date :",True,1215,255,0,195,180,True,0,"Arial",8,-2147483633,0)
+Gui.frmWO.cmdCutoffRefresh.Create(Button)
+Gui.frmWO.cmdCutoffRefresh.Size(855,375)
+Gui.frmWO.cmdCutoffRefresh.Position(2835,90)
+Gui.frmWO.cmdCutoffRefresh.Caption("Refresh")
+Gui.frmWO.cmdCutoffRefresh.Event(Click,cmdCutoffRefresh_Click)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+f.Intrinsic.Control.Try
+v.Global.sSwitch.Declare
+v.Global.bSave.Declare
+
+
+'F.ODBC.Connection!conx.OpenCompanyConnection(300)
+''f.Intrinsic.Control.CallSub(Load_GridWO)
+''f.Intrinsic.Control.CallSub(Load_GridPO)
+'	gui.frmWO..Show
+'	gui.frmWO.GsGridWO.Anchor(7)
+'	gui.frmWO.GsGridWO.Anchor(15)
+'	gui.frmWO.cmdWOGEN.Anchor(9)
+'	gui.frmWO..WindowState(2)
+'	gui.frmWO.cmdWOGEN.Caption("Generate PO")
+'	gui.frmWO..Caption("PO Dashboard")
+'	f.Intrinsic.Control.ExitSub
+
+'*******************************************
+'Developer : RANJJIT NAIR
+'Customer :  BARS
+'SALES FORECAST
+'*******************************************
+F.ODBC.Connection!conx.OpenCompanyConnection(300)
+
+
+f.Intrinsic.Control.If(v.Caller.Switches,=,"F")
+'forcast
+	v.Global.sSwitch.Set("F")
+	f.Intrinsic.Control.CallSub(Load_Grid)
+	gui.frmUpload..Caption("Forecast Upload")
+	gui.frmUpload..Show
+	gui.frmUpload.GsGrid.Anchor(7)
+f.Intrinsic.Control.ElseIf(v.Caller.Switches,=,"H")
+'Sales Hist
+	v.Global.sSwitch.Set("H")
+	f.Intrinsic.Control.CallSub(Load_Grid)
+	gui.frmUpload..Caption("Sales History Upload")
+	gui.frmUpload..Show
+	gui.frmUpload.GsGrid.Anchor(7)
+f.Intrinsic.Control.ElseIf(v.Caller.Switches,=,"C")
+'Reorder Point/Max Calculator 
+	gui.frmCALC.optPEAK.Value(1)
+	gui.frmCALC..Show
+f.Intrinsic.Control.ElseIf(v.Caller.Switches,=,"M")
+'Reorder Point/Max Maintenance Screen
+	f.Intrinsic.Control.CallSub(Load_GridMaint)
+	gui.ReOrderMAX_Maint..Show
+	gui.ReOrderMAX_Maint.GsGrid_Maint.Anchor(7)
+f.Intrinsic.Control.ElseIf(v.Caller.Hook,=,"10185")
+'SAVE POST Invetory Master
+	f.Intrinsic.Control.CallSub(Save_InventoryScreen)
+f.Intrinsic.Control.ElseIf(v.Caller.Switches,=,"WO")
+'WO Generate Dashboard
+	gui.frmWO..Show
+	gui.frmWO.GsGridWO.Anchor(15)
+	gui.frmWO.cmdWOGEN.Anchor(9)
+	gui.frmWO.cmdWOGEN.visible(False)
+f.Intrinsic.Control.ElseIf(v.Caller.Switches,=,"PO")
+'PO Generate Dashboard
+	gui.frmWO.cmdWOGEN.Caption("Generate PO")
+	gui.frmWO..Caption("PO Dashboard")
+	gui.frmWO..Show
+	gui.frmWO.GsGridWO.Anchor(15)
+	gui.frmWO.cmdWOGEN.Anchor(9)
+	gui.frmWO.cmdWOGEN.visible(False)
+f.Intrinsic.Control.endif
+
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.frmUpload_UnLoad.Start
+f.Intrinsic.Control.Try
+variable.local.returnvalue.Declare(long)
+
+F.Intrinsic.Control.If(V.Global.bSave,=,True)
+	Function.Intrinsic.UI.MsgBox("Changes not saved, Do you want to save the changes ?", "Confirm", 4, variable.local.returnvalue)
+	F.Intrinsic.Control.If(variable.local.returnvalue,=,6)
+		f.Intrinsic.Control.CallSub(cmdSave_RMMaint_Click)
+	f.Intrinsic.Control.EndIf 
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(V.ODBC.conx.State,=,1)
+
+	f.Intrinsic.Control.If(v.DataTable.DTData.Exists,=,True)
+		f.Data.DataTable.Close("DTData")
+	f.Intrinsic.Control.EndIf
+	
+	f.ODBC.Connection!conx.Close
+	f.Intrinsic.Control.End
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.frmUpload_UnLoad.End
+
+Program.Sub.cmdSave_Click.Start
+f.Intrinsic.Control.Try
+
+f.Intrinsic.Control.If(v.Global.sSwitch,=,"F")
+	f.ODBC.Connection!conx.execute("delete from GCG_5778_Forecast")
+	F.Data.DataTable.SaveToDB("DTData","conx","GCG_5778_Forecast","Part*!*Loc",256)
+	f.Intrinsic.Control.CallSub(GetForecast_Data)
+f.Intrinsic.Control.Else
+	f.ODBC.Connection!conx.execute("delete from GCG_5778_SALESHIST")
+	F.Data.DataTable.SaveToDB("DTData","conx","GCG_5778_SALESHIST","Part*!*Loc*!*Year",256)
+f.Intrinsic.Control.EndIf
+
+'F.Data.DataTable.SaveToDB("Import1","conx","GCG_5778_Forecast","JOB*!*SUFFIX*!*Sequence*!*Terminal_no*!*Sequence_key*!*employee",256,"JOB@!@JOB*!*SUFFIX@!@SUFFIX*!*Sequence@!@Sequence*!*Terminal_no@!@Terminal_no*!*Sequence_key@!@Sequence_key*!*jbo_from@!@jbo_from*!*employee@!@employee")
+
+f.Intrinsic.UI.Msgbox("Data saved successfully")
+
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.ErrorMsg.Start
+v.Local.sError.Declare
+f.Intrinsic.String.Build("Project GCG_5778_Forecast.g2u {0}{0}Subroutine: {1}{0}Error: {2} with Description: {3}", v.Ambient.NewLine, v.Args.CurrentSub, v.Ambient.ErrorNumber, v.Ambient.ErrorDescription, v.Local.sError)
+f.Intrinsic.UI.Msgbox(v.Local.sError)
+
+Program.Sub.ErrorMsg.End
+
+Program.Sub.cmdupload_Click.Start
+f.Intrinsic.Control.Try
+
+V.Local.sFileName.Declare(String)
+
+
+	f.Intrinsic.Control.If(v.Screen.frmUpload!cmdupload.Caption,=,"Reload Data")
+		'Reload
+		f.Intrinsic.Control.CallSub(LoadFile,"FILENAME",v.Screen.frmUpload!txtfilename.text)
+	f.Intrinsic.Control.Else
+		'Browse
+		F.Intrinsic.UI.ShowOpenFileDialog("",".xlsx",V.Local.sFileName)
+		F.Intrinsic.Control.If(V.Local.sFileName.Trim,=,"***CANCEL***")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+		gui.frmUpload.txtfilename.Text(V.Local.sFileName)
+		Gui.frmUpload.cmdupload.Caption(" ")
+		Gui.frmUpload.cmdupload.Caption("Reload Data")
+	f.Intrinsic.Control.EndIf
+	
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+		
+	f.Intrinsic.Control.EndTry
+Program.Sub.cmdupload_Click.End
+
+Program.Sub.Load_Grid.Start
+f.Intrinsic.Control.Try
+
+V.Local.sTypes.Declare
+V.Local.sRet.Declare
+V.Local.sFile.Declare
+V.Local.sRow.Declare
+V.Local.sFieldNames.Declare
+
+v.Local.iTotClmn.Declare
+v.Local.stitle.Declare
+v.Local.i.Declare
+
+
+
+F.Intrinsic.UI.InvokeWaitDialog("Loading...","Please Wait...")
+
+f.Intrinsic.Control.If(v.Global.sSwitch,=,"F")
+	f.Data.DataTable.CreateFromSQL("DTData","CONX","select * from GCG_5778_Forecast order by part",True)
+f.Intrinsic.Control.Else
+	f.Data.DataTable.CreateFromSQL("DTData","CONX","select * from GCG_5778_SALESHIST order by year",True)
+'	gui.frmUpload.cmdGSSHist.Visible(true)
+f.Intrinsic.Control.endif
+F.Data.DataView.Create("DTData","DVImport1",22,"","")
+
+gui.frmUpload.GsGrid.AddGridViewFromDataView("GridView","DTData","DVImport1")
+
+
+gui.frmUpload.GsGrid.GetColumnCount("GridView",v.Local.iTotClmn)
+f.Intrinsic.Math.Sub(v.Local.iTotClmn,1,v.Local.iTotClmn)
+f.Intrinsic.Control.For(v.Local.i,0,v.Local.iTotClmn,1)
+	gui.frmUpload.GsGrid.GetColumnNamebyIndex("GridView",v.Local.i,v.Local.stitle)
+'	gui.frmUpload.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"AllowEdit",False)
+'	gui.frmUpload.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"ReadOnly",True)
+
+	gui.frmUpload.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"AllowEdit",True)
+	gui.frmUpload.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"ReadOnly",False)
+	
+	gui.frmUpload.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"HeaderFontBold","True")
+	gui.frmUpload.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"HeaderBackColor","#7FFF00")
+	gui.frmUpload.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"HeaderHAlignment","Center")
+	gui.frmUpload.GsGrid.SetColumnProperty("GridView",v.Local.stitle,"HeaderWordWrap","wrap")
+f.Intrinsic.Control.Next(v.Local.i)
+
+	gui.frmUpload.GsGrid.SetColumnProperty("GridView","Part","AllowEdit",False)
+	gui.frmUpload.GsGrid.SetColumnProperty("GridView","Part","ReadOnly",True)
+	
+	gui.frmUpload.GsGrid.SetColumnProperty("GridView","Loc","AllowEdit",False)
+	gui.frmUpload.GsGrid.SetColumnProperty("GridView","Loc","ReadOnly",True)
+
+gui.frmUpload.GsGrid.SetColumnProperty("GridView","Part","MinWidth",120)
+
+gui.frmUpload.GsGrid.MainView("GridView")
+
+f.Data.DataView.Close("DTData","DVImport1")
+
+F.Intrinsic.UI.CloseWaitDialog
+
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+		F.Intrinsic.UI.CloseWaitDialog
+	f.Intrinsic.Control.EndTry
+Program.Sub.Load_Grid.End
+
+Program.Sub.LoadFile.Start
+f.Intrinsic.Control.Try
+
+V.Local.sTypes.Declare
+V.Local.sRet.Declare
+V.Local.sFile.Declare
+V.Local.sRow.Declare
+V.Local.sFieldNames.Declare
+
+
+
+V.Local.sFile.Set(v.Args.FILENAME)
+F.Intrinsic.UI.InvokeWaitDialog("Loading...","Please Wait...")
+'Function.Automation.MSExcel.CreateAppObject("EXCEL")
+'Function.Automation.MSExcel.OpenWorkbook("EXCEL","BOOK",V.Local.sFile)
+'Function.Automation.MSExcel.OpenWorksheet("BOOK","SHEET",1)
+
+
+'f.Intrinsic.Control.If(v.Global.sSwitch,=,"F")
+'	F.Automation.MSExcel.ReadSpreadsheet(V.Local.sFile,14,,V.Local.sRow)
+'	V.Local.sFieldNames.Set("Part*!*Loc*!*Month_1*!*Month_2*!*Month_3*!*Month_4*!*Month_5*!*Month_6*!*Month_7*!*Month_8*!*Month_9*!*Month_10*!*Month_11*!*Month_12")
+'	V.Local.sTypes.Set("String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String")
+'f.Intrinsic.Control.Else
+'	F.Automation.MSExcel.ReadSpreadsheet(V.Local.sFile,15,,V.Local.sRow)
+'	V.Local.sFieldNames.Set("Part*!*Loc*!*Month_1*!*Month_2*!*Month_3*!*Month_4*!*Month_5*!*Month_6*!*Month_7*!*Month_8*!*Month_9*!*Month_10*!*Month_11*!*Month_12*!*Year")
+'	V.Local.sTypes.Set("String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*string")
+'f.Intrinsic.Control.endif
+
+f.Intrinsic.Control.If(v.Global.sSwitch,=,"F")
+'	F.Automation.MSExcel.ReadSpreadsheet(V.Local.sFile,14,,V.Local.sRow)
+	V.Local.sFieldNames.Set("Part1*!*REV*!*Loc*!*Month_1*!*Month_2*!*Month_3*!*Month_4*!*Month_5*!*Month_6*!*Month_7*!*Month_8*!*Month_9*!*Month_10*!*Month_11*!*Month_12")
+	V.Local.sTypes.Set("String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String")
+f.Intrinsic.Control.Else
+'	F.Automation.MSExcel.ReadSpreadsheet(V.Local.sFile,15,,V.Local.sRow)
+	V.Local.sFieldNames.Set("Part1*!*REV*!*Loc*!*Month_1*!*Month_2*!*Month_3*!*Month_4*!*Month_5*!*Month_6*!*Month_7*!*Month_8*!*Month_9*!*Month_10*!*Month_11*!*Month_12*!*Year")
+	V.Local.sTypes.Set("String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*String*!*string")
+f.Intrinsic.Control.endif
+
+'F.Automation.Generic.DestroyObject("SHEET")
+'F.Automation.Generic.DestroyObject("BOOK")
+'F.Automation.Generic.DestroyObject("EXCEL")
+
+'F.Intrinsic.String.Split(V.Local.sRow,"&^&",V.Local.sRet)
+'F.Data.DataTable.CreateFromString("Import1",V.Local.sRet,V.Local.sFieldNames,V.Local.sTypes,"*!*","$!$",True)
+
+Function.Data.DataTable.CreateFromCSV("Import1",V.Local.sFile,V.Local.sFieldNames,V.Local.sTypes,True) 
+
+f.Data.DataTable.AddColumn("Import1","Part","string")
+f.Data.DataTable.SetValueFormat("Import1",-1,"Part1","Part","!@@@@@@@@@@@@@@@@@")
+f.Data.DataTable.AddExpressionColumn("Import1","Part2","String","[Part] + [REV]")
+
+f.Data.DataTable.SetValueFormat("Import1",-1,"Part2","Part","")
+
+f.Data.DataTable.RemoveColumn("Import1","Part2")
+f.Data.DataTable.RemoveColumn("Import1","Part1")
+f.Data.DataTable.RemoveColumn("Import1","REV")
+f.Data.DataTable.DeleteRow("DTData")
+f.Data.DataTable.Merge("Import1","DTData",False,2)
+'f.Data.DataTable.SetValue("DTData",-1,"LAST_CHG_USER",v.Caller.User)
+
+f.Data.DataTable.Close("Import1")
+F.Intrinsic.UI.CloseWaitDialog
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+		F.Intrinsic.UI.CloseWaitDialog
+	f.Intrinsic.Control.EndTry
+Program.Sub.LoadFile.End
+
+Program.Sub.Find_Value.Start
+f.Intrinsic.Control.Try
+
+V.Local.iMonth.Declare
+V.Local.iMonth1.Declare
+V.Local.iMonth2.Declare
+V.Local.sMonth.Declare
+V.Local.sSQL.Declare
+V.Local.iYear.Declare
+V.Local.iYear1.Declare
+V.Local.iYear2.Declare
+V.Local.sYear.Declare
+V.Local.sRet.Declare
+V.Local.sRet1.Declare
+V.Local.sRet2.Declare
+V.Local.sFieldname.Declare
+V.Local.fValue.Declare
+
+
+'Based on PEEK or Average selction Caluculate Value
+	F.Intrinsic.Date.month(V.Ambient.Date,V.Local.imonth)
+	f.Intrinsic.Control.If(V.Local.imonth,=,11)
+		V.Local.sMonth.set("MONTH_11,MONTH_12,MONTH_1")
+	f.Intrinsic.Control.elseIf(V.Local.imonth,=,12)
+		V.Local.sMonth.set("MONTH_12,MONTH_1,MONTH_2")
+	f.Intrinsic.Control.else
+		f.Intrinsic.Math.Add(V.Local.iMonth,1,V.Local.iMonth1)
+		f.Intrinsic.Math.Add(V.Local.iMonth,2,V.Local.iMonth2)
+		f.Intrinsic.String.Build("MONTH_{0},MONTH_{1},MONTH_{2}",V.Local.iMonth,V.Local.iMonth1,V.Local.iMonth2,V.Local.sMonth)
+	f.Intrinsic.Control.endif
+	
+	f.Intrinsic.String.Build("select part,loc,{0} from GCG_5778_Forecast",V.Local.sMonth,V.Local.sSQL)
+	f.Data.DataTable.CreateFromSQL("DTForecast","conx",V.Local.sSQL)
+	
+	F.Intrinsic.Date.year(V.Ambient.Date,V.Local.iYear)
+	f.Intrinsic.Math.sub(V.Local.iYear,1,V.Local.iYear1)
+	f.Intrinsic.Math.sub(V.Local.iYear,2,V.Local.iYear2)
+	f.Intrinsic.String.Build("{0},{1},{2}",V.Local.iYear,V.Local.iYear1,V.Local.iYear2,V.Local.sYear)
+	f.Intrinsic.String.Build("select part,loc,{0} from GCG_5778_SALESHIST where year IN ({1})",V.Local.sMonth,V.Local.sYear,V.Local.sSQL)
+	f.Data.DataTable.CreateFromSQL("DTSalesHist","conx",V.Local.sSQL)
+	
+	f.Data.DataTable.Merge("DTSalesHist","DTForecast",true,2)
+	
+	f.Data.DataView.Create("DTForecast","DVForecast")
+	f.Intrinsic.String.Split(V.Local.sMonth,",",V.Local.sMonth)
+	f.Intrinsic.String.Build("Part*!*LOC*!*{0}",V.Local.sMonth(0),V.Local.sFieldname)
+	f.Data.DataView.ToString("DTForecast","DVForecast",V.Local.sFieldname,",","*!*",V.Local.sRet)
+	
+	f.Intrinsic.String.Build("Part*!*LOC*!*{0}",V.Local.sMonth(1),V.Local.sFieldname)
+	f.Data.DataView.ToString("DTForecast","DVForecast",V.Local.sFieldname,",","*!*",V.Local.sRet1)
+	
+	f.Intrinsic.String.Build("Part*!*LOC*!*{0}",V.Local.sMonth(2),V.Local.sFieldname)
+	f.Data.DataView.ToString("DTForecast","DVForecast",V.Local.sFieldname,",","*!*",V.Local.sRet2)
+	
+	
+	f.Intrinsic.String.Build("{0}*!*{1}*!*{2}",V.Local.sRet,V.Local.sRet1,V.Local.sRet2,V.Local.sRet)
+
+	f.Data.DataTable.CreateFromString("DTValue",V.Local.sRet,"part*!*loc*!*month_1","string*!*string*!*string",",","*!*")
+'	f.Intrinsic.Variable.ArrayMax(V.Local.sRet,V.Local.fValue)
+
+	f.Data.DataTable.Create("DTLINK",false)
+	f.Data.DataTable.AddColumn("DTLINK","SEQCODE","string")
+	
+	
+	f.Intrinsic.Control.If(v.Screen.frmCALC!optPEAK.Value,=,true)
+		'PEEK
+		F.Data.Linq.Join("leftjoin","datatable","DTValue*!*D","datatable","DTLINK*!*L","D.part=L.SEQCODE","D.Part*!*D.Loc*!*max(D.month_1) as TotalVAL","","D.Part,D.loc","","ImportNew",true)
+	f.Intrinsic.Control.else
+		'Average
+		F.Data.Linq.Join("leftjoin","datatable","DTValue*!*D","datatable","DTLINK*!*L","D.part=L.SEQCODE","D.Part*!*D.Loc*!*average(D.month_1) as TotalVAL","","D.Part,D.loc","","ImportNew",true)
+	f.Intrinsic.Control.endif
+	f.Data.DataTable.Close("DTLINK")
+
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+		F.Intrinsic.UI.CloseWaitDialog
+	f.Intrinsic.Control.EndTry
+Program.Sub.Find_Value.End
+
+Program.Sub.Find_InterDomes.Start
+f.Intrinsic.Control.Try
+
+v.Local.sSql.Declare
+v.Local.sSubSql.Declare
+
+f.Intrinsic.Control.If(v.Screen.frmCALC!optPEAK.Value,=,true)
+	v.Local.sSubSql.Set("DOMESTIC_RO_POINT as VAL1,INTNL_RO_POINT as VAL2")
+f.Intrinsic.Control.else
+	v.Local.sSubSql.Set("DOMESTIC_MAX as VAL1,INTNL_MAX as VAL2")
+f.Intrinsic.Control.endif
+
+
+f.Intrinsic.String.Build("select INV1.part,INV1.location,Text_Info1,code_sort,DOMESTIC_RO_POINT,INTNL_RO_POINT,DOMESTIC_MAX,INTNL_MAX from INVENTORY_MST2 INV2 join Inventory_Mstr INV1 on INV1.part = INV2.part and INV1.location = INV2.location join GCG_5778_Forecast FORC on INV1.part = FORC.part and INV1.location = FORC.loc join GCG_5778_ReOrderPMax on code_sort = Product_family","",v.Local.sSql)
+
+f.Data.DataTable.CreateFromSQL("DTINTDOM","conx",v.Local.sSql)
+
+F.Data.Linq.Join("leftjoin","datatable","ImportNew*!*D","datatable","DTINTDOM*!*L","D.part=L.part","D.Part*!*D.Loc*!*D.TotalVAL*!*L.code_sort*!*L.Text_Info1*!*L.DOMESTIC_RO_POINT*!*L.INTNL_RO_POINT*!*L.DOMESTIC_MAX*!*L.INTNL_MAX","","","","ImportFinal",True)
+
+
+F.Data.DataTable.AddExpressionColumn("ImportFinal","REORDVAL", "long" , "IIF([Text_Info1] = 'I',([TotalVAL]/4)*[INTNL_RO_POINT],([TotalVAL]/4)*[DOMESTIC_RO_POINT])")
+
+F.Data.DataTable.AddExpressionColumn("ImportFinal","MAXVAL", "long" , "IIF([Text_Info1] = 'I',([TotalVAL]/4)*[INTNL_MAX],([TotalVAL]/4)*[DOMESTIC_MAX])")
+
+
+
+'f.Data.DataTable.AddColumn("ImportFinal","FinalValNew","float")
+'f.Data.DataTable.SetValueFormat("ImportFinal",-1,"FinalVal","FinalValNew","0.00")
+
+f.Data.DataTable.AddColumn("ImportFinal","LAST_CHG_USER","string",v.Caller.User)
+f.Data.DataTable.AddColumn("ImportFinal","LAST_CHG_DATE","datetime",v.Ambient.now)
+F.Data.DataTable.SaveToDB("ImportFinal","conx","INVENTORY_MSTR","part*!*loc",256,"part@!@part*!*loc@!@location*!*REORDVAL@!@Qty_ReOrder")
+F.Data.DataTable.SaveToDB("ImportFinal","conx","INVENTORY_MST2","part*!*loc",256,"part@!@part*!*loc@!@location*!*MAXVAL@!@Qty_Maximum")
+F.Data.DataTable.SaveToDB("ImportFinal","conx","GCG_5778_Log","part*!*loc",128,"part@!@part*!*loc@!@loc*!*LAST_CHG_USER@!@LAST_CHG_USER*!*REORDVAL@!@REORDER_POINT*!*MAXVAL@!@MAXIMUM*!*LAST_CHG_DATE@!@LAST_CHG_DATE")
+
+f.Data.DataTable.Close("ImportNew")
+f.Data.DataTable.Close("DTINTDOM")
+f.Data.DataTable.Close("ImportFinal")
+
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+		F.Intrinsic.UI.CloseWaitDialog
+	f.Intrinsic.Control.EndTry
+Program.Sub.Find_InterDomes.End
+
+Program.Sub.cmdOKCALC_Click.Start
+f.Intrinsic.Control.Try
+
+	F.Intrinsic.UI.InvokeWaitDialog("Processing...","Please Wait...")
+	f.Intrinsic.Control.CallSub(Find_Value)
+	f.Intrinsic.Control.CallSub(Find_InterDomes)
+	f.Intrinsic.Control.CallSub(frmUpload_UnLoad)
+	
+	f.Intrinsic.Control.End
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+		F.Intrinsic.UI.CloseWaitDialog
+	f.Intrinsic.Control.EndTry
+Program.Sub.cmdOKCALC_Click.End
+
+Program.Sub.cmdSave_RMMaint_Click.Start
+f.Intrinsic.Control.Try
+
+F.Data.DataTable.AcceptChanges("DTData")
+F.Data.DataView.Create("DTData","DVSave",22,"len(PRODUCT_FAMILY)>0","")
+f.Data.DataView.ToDataTableDistinct("DTData","DVSave","DTsave","PRODUCT_FAMILY*!*DOMESTIC_RO_POINT*!*INTNL_RO_POINT*!*DOMESTIC_MAX*!*INTNL_MAX*!*LAST_CHG_DATE*!*LAST_CHG_USER")
+
+f.ODBC.Connection!conx.execute("delete from GCG_5778_ReOrderPMax")
+F.Data.DataTable.SaveToDB("DTsave","conx","GCG_5778_ReOrderPMax","Product_Family",256)
+f.Data.DataView.Close("DTData","DVSave")
+f.Data.DataTable.Close("DTsave")
+v.Global.bSave.set(false)
+
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.cmdSave_RMMaint_Click.End
+
+Program.Sub.Load_GridMaint.Start
+f.Intrinsic.Control.Try
+
+v.Local.iTotClmn.Declare
+v.Local.stitle.Declare
+v.Local.i.Declare
+
+
+
+F.Intrinsic.UI.InvokeWaitDialog("Loading...","Please Wait...")
+
+f.Data.DataTable.CreateFromSQL("DTData","CONX","select PRODUCT_FAMILY,DOMESTIC_RO_POINT,INTNL_RO_POINT,DOMESTIC_MAX,INTNL_MAX,LAST_CHG_DATE,LAST_CHG_USER  from GCG_5778_ReOrderPMax order by 1",True)
+
+
+F.Data.DataView.Create("DTData","DVImport1",22,"","")
+
+F.Data.DataTable.AddColumn("DTData","SortCode_Browse","string","^")
+
+f.Data.DataTable.AddRow("DTData","PRODUCT_FAMILY","","DOMESTIC_RO_POINT",0,"INTNL_RO_POINT",0,"DOMESTIC_MAX",0,"INTNL_MAX",0,"LAST_CHG_DATE",v.Ambient.now,"LAST_CHG_USER",v.Caller.User)
+gui.ReOrderMAX_Maint.GsGrid_Maint.AddGridViewFromDataView("GridView","DTData","DVImport1")
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetGridviewProperty("GridView","AllowAddRows",True)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetGridviewProperty("GridView","AllowDeleteRows",True)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetGridviewProperty("GridView","Editable",true)
+
+
+
+gui.ReOrderMAX_Maint.GsGrid_Maint.GetColumnCount("GridView",v.Local.iTotClmn)
+f.Intrinsic.Math.Sub(v.Local.iTotClmn,1,v.Local.iTotClmn)
+f.Intrinsic.Control.For(v.Local.i,0,v.Local.iTotClmn,1)
+	gui.ReOrderMAX_Maint.GsGrid_Maint.GetColumnNamebyIndex("GridView",v.Local.i,v.Local.stitle)
+	gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView",v.Local.stitle,"AllowEdit",False)
+	gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView",v.Local.stitle,"ReadOnly",True)
+
+	gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView",v.Local.stitle,"HeaderFontBold","True")
+	gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView",v.Local.stitle,"HeaderBackColor","#7FFF00")
+	gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView",v.Local.stitle,"HeaderHAlignment","Center")
+	gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView",v.Local.stitle,"HeaderWordWrap","wrap")
+f.Intrinsic.Control.Next(v.Local.i)
+
+'gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","SORTCODE_BROWSE","Icon","^")
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","SORTCODE_BROWSE","AllowEdit",False)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","SORTCODE_BROWSE","CellBackColor", "#A9A9A9")
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","SORTCODE_BROWSE","CellFontBold",True)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","SORTCODE_BROWSE","VisibleIndex",1)
+
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","SORTCODE_BROWSE","ReadOnly",True)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","SORTCODE_BROWSE","Caption"," ")
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","SORTCODE_BROWSE","CellHAlignment","Center")
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","SORTCODE_BROWSE","MaxWidth","30")
+
+
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","PRODUCT_FAMILY","Caption","PRODUCT FAMILY")
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","DOMESTIC_RO_POINT","Caption","DOMESTIC ROPOINT")
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","INTNL_RO_POINT","Caption","INTNL_ROPOINT")
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","DOMESTIC_MAX","Caption","DOMESTIC MAX")
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","INTNL_MAX","Caption","INTNL MAX")
+
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","DOMESTIC_RO_POINT","ReadOnly",false)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","DOMESTIC_RO_POINT","AllowEdit",true)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","INTNL_RO_POINT","ReadOnly",false)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","INTNL_RO_POINT","AllowEdit",True)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","DOMESTIC_MAX","ReadOnly",false)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","DOMESTIC_MAX","AllowEdit",True)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","INTNL_MAX","ReadOnly",false)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","INTNL_MAX","AllowEdit",True)
+
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","LAST_CHG_DATE","visible",false)
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","LAST_CHG_USER","visible",false)
+
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetColumnProperty("GridView","Product_Family","MinWidth",120)
+
+
+gui.ReOrderMAX_Maint.GsGrid_Maint.SetGridViewProperty("GridView", "OptionsSelectionEnableAppearanceFocusedRow", "False") 
+
+gui.ReOrderMAX_Maint.GsGrid_Maint.MainView("GridView")
+
+f.Data.DataView.Close("DTData","DVImport1")
+
+F.Intrinsic.UI.CloseWaitDialog
+
+
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+		F.Intrinsic.UI.CloseWaitDialog
+	f.Intrinsic.Control.EndTry
+Program.Sub.Load_GridMaint.End
+
+Program.Sub.GsGrid_Maint_RowCellClick.Start
+f.Intrinsic.Control.Try
+ 
+f.Intrinsic.Control.BlockEvents 
+V.Local.sSQL.Declare
+V.Local.sRet.Declare
+
+F.Data.DataTable.AcceptChanges("DTData")
+f.Intrinsic.Control.If(V.Args.column.UCase,=,"SORTCODE_BROWSE")
+	V.Local.sSQL.Set("select SORT_CODE,DESCR from INV_SORT order by 1")
+	F.Intrinsic.UI.SetBrowserHotTypeAhead(True)
+	F.Intrinsic.UI.Browser("Sort Code","conx",V.Local.sSQL,"Sort Code*!*Description","30*!*70",V.Local.sRet)
+	F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+		f.Intrinsic.Control.If(v.Args.RowIndex,=,-1)
+			F.Data.DataTable.SetValue("DTData",v.DataTable.DTData.RowCount--,"PRODUCT_FAMILY",V.Local.sRet(0).Trim,"LAST_CHG_USER",v.Caller.User,"LAST_CHG_DATE",v.Ambient.Now)
+			gui.ReOrderMAX_Maint.GsGrid_Maint.FocusCell("GridView",v.DataTable.DTData.RowCount--,1)
+		f.Intrinsic.Control.Else
+			F.Data.DataTable.SetValue("DTData",V.Args.RowIndex,"PRODUCT_FAMILY",V.Local.sRet(0).Trim,"LAST_CHG_USER",v.Caller.User,"LAST_CHG_DATE",v.Ambient.Now)
+	
+			gui.ReOrderMAX_Maint.GsGrid_Maint.FocusCell("GridView",v.Args.RowIndex,1)
+		Function.Intrinsic.Control.EndIf
+		v.Global.bSave.Set(true)
+	Function.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.UnBlockEvents 
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+		F.Intrinsic.UI.CloseWaitDialog
+	f.Intrinsic.Control.EndTry
+Program.Sub.GsGrid_Maint_RowCellClick.End
+
+Program.Sub.GsGrid_Maint_CellValueChanged.Start
+	v.Global.bSave.Set(true)
+Program.Sub.GsGrid_Maint_CellValueChanged.End
+
+Program.Sub.Save_InventoryScreen.Start
+f.Intrinsic.Control.Try
+'Variable.Passed.000029 MAX
+'Variable.Passed.000035 REORDER
+'Variable.Passed.000007 PART
+'Variable.Passed.000008 REV
+'Variable.Passed.000009 LOC
+
+v.Local.sSQL.Declare
+v.Local.sPart.Declare
+v.Local.lMAX.Declare
+v.Local.lReOrder.Declare
+
+'select INV2.part,INV2.location,Qty_Maximum,Qty_ReOrder from INVENTORY_MSTR INV join  INVENTORY_MST2 INV2 on INV.part = INV2.part and INV.location = INV2.location 
+'where INV.part = '0020-40327' 
+
+Function.Global.Inventory.GetGSSPart(Variable.Passed.000007,Variable.Passed.000008,V.Local.sPart)
+'f.Intrinsic.String.Build("select INV2.part,INV2.location,Qty_Maximum,Qty_ReOrder from INVENTORY_MSTR INV join  INVENTORY_MST2 INV2 on INV.part = INV2.part and INV.location = INV2.location where INV.part = '{0}' and INV2.location = '{1}'",V.Local.sPart,Variable.Passed.000009,v.Local.sSQL)
+
+f.Intrinsic.String.Build("select top 1 Reorder_Point,Maximum from GCG_5778_Log where part = '{0}' and loc = '{1}' order by LAST_CHG_DATE desc ",V.Local.sPart,Variable.Passed.000009,v.Local.sSQL)
+
+f.Data.DataTable.CreateFromSQL("DTData","CONX",v.Local.sSQL)
+f.Intrinsic.Control.If(v.DataTable.DTData.RowCount,>,0)
+
+'	f.Intrinsic.Control.If(V.DataTable.DTData(0).Maximum!FieldValLong,<>,Variable.Passed.000029.Long)
+'	f.Intrinsic.Control.ANDIf(V.DataTable.DTData(0).Reorder_Point!FieldValLong,<>,Variable.Passed.000035.Long)
+'		v.Local.lMAX.Set(Variable.Passed.000029.Long)
+'		v.Local.lReOrder.Set(Variable.Passed.000035.Long)
+'	f.Intrinsic.Control.ElseIf(V.DataTable.DTData(0).Reorder_Point!FieldValLong,<>,Variable.Passed.000035.Long)
+'		v.Local.lReOrder.Set(Variable.Passed.000035.Long)
+'	f.Intrinsic.Control.ElseIf(V.DataTable.DTData(0).Maximum!FieldValLong,<>,Variable.Passed.000029.Long)
+'		v.Local.lMAX.Set(Variable.Passed.000029.Long)
+'	f.Intrinsic.Control.Else
+'		f.Intrinsic.Control.CallSub(frmUpload_UnLoad)
+'	f.Intrinsic.Control.EndIf
+
+
+	f.Intrinsic.Control.If(V.DataTable.DTData(0).Reorder_Point!FieldValLong,<>,Variable.Passed.000035.Long)
+		v.Local.lReOrder.Set(Variable.Passed.000035.Long)
+		v.Local.lMAX.Set(Variable.Passed.000029.Long)
+	f.Intrinsic.Control.ElseIf(V.DataTable.DTData(0).Maximum!FieldValLong,<>,Variable.Passed.000029.Long)
+		v.Local.lMAX.Set(Variable.Passed.000029.Long)
+		v.Local.lReOrder.Set(Variable.Passed.000035.Long)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.Control.CallSub(frmUpload_UnLoad)
+	f.Intrinsic.Control.EndIf
+		
+	f.Data.DataTable.CreateFromSQL("ImportFinal","conx","select * from GCG_5778_Log where LAST_CHG_USER = 'SDSDSDSD'")
+	
+	Function.Data.DataTable.AddRowByMap("ImportFinal", "Part*!*Loc*!*LAST_CHG_DATE*!*LAST_CHG_USER*!*REORDER_POINT*!*MAXIMUM",v.Local.sPart,Variable.Passed.000009,v.Ambient.now,v.Caller.User,v.Local.lReOrder,v.Local.lMAX)		
+	
+	F.Data.DataTable.SaveToDB("ImportFinal","conx","GCG_5778_Log","part*!*loc",128,"part@!@part*!*loc@!@loc*!*LAST_CHG_USER@!@LAST_CHG_USER*!*REORDER_POINT@!@REORDER_POINT*!*MAXIMUM@!@MAXIMUM*!*LAST_CHG_DATE@!@LAST_CHG_DATE")
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.CallSub(frmUpload_UnLoad)
+
+f.Data.DataTable.Close("DTData")
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.Save_InventoryScreen.End
+
+Program.Sub.frmCALC_UnLoad.Start
+Program.Sub.frmCALC_UnLoad.End
+
+Program.Sub.cmdGSSHist_Click.Start
+Program.Sub.cmdGSSHist_Click.End
+
+Program.Sub.Load_GridWO.Start
+f.Intrinsic.Control.Try
+
+V.Local.sTypes.Declare
+V.Local.sRet.Declare
+V.Local.sSQL.Declare
+V.Local.sFile.Declare
+V.Local.sRow.Declare
+V.Local.sFieldNames.Declare
+v.Local.dtDueDate.Declare
+
+v.Local.iTotClmn.Declare
+v.Local.stitle.Declare
+v.Local.i.Declare
+
+F.Intrinsic.UI.InvokeWaitDialog("Loading...","Please Wait...")
+
+'V.Local.sSQL.Set("select CONVERT(0,SQL_BIT) as 'Select',' ' as 'WO Created',' ' as WO,' '  as Suffix,MSTR.part,MSTR.location,MSTR.description,MSTR.PRODUCT_LINE,rtrim(MSTR.code_sort) as 'code_sort','' as Matlocation,QTY_ONHAND,Case When BOM_Complete Is Null Then Convert(0,SQL_BIT) When BOM_Complete = 0 Then Convert(0,SQL_BIT) When BOM_Complete = 1 Then Convert(1,SQL_BIT) End as 'BOM Reviewed',Case When v_ROUTER_SUPP_HDR.Complete Is Null Then Convert(0,SQL_BIT) When v_ROUTER_SUPP_HDR.Complete = 0 Then Convert(0,SQL_BIT) When v_ROUTER_SUPP_HDR.Complete = 1 Then Convert(1,SQL_BIT) End  as 'Router Reviewed',Case When v_ROUTER_SUPP_HDR.INACTIVE Is Null Then Convert(0,SQL_BIT) When v_ROUTER_SUPP_HDR.INACTIVE = 0 Then Convert(0,SQL_BIT) When v_ROUTER_SUPP_HDR.INACTIVE = 1 Then Convert(1,SQL_BIT) End as INACTIVE,Time_Material_Lead as 'Lead Time',dateadd(day,Time_Material_Lead,current_timestamp()) as Item_Promise_DT ")
+'f.Intrinsic.String.Build(" {0} ,0 as qtyorder_sortcode,qty_reorder,(QTY_ONHAND  + qty_onorder_Po + qty_onorder_wo) - qty_required as 'net',convert(UsrFld.User1 ,sql_Integer) as OrdIncrement ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0}  ,Qty_maximum,flag_Inactive ,Case When part_17 Is Null Then Convert(0,SQL_BIT) else Convert(1,SQL_BIT) End as 'ECCN',rtrim(MSTR.part) + rtrim(MSTR.location) as PartLoc,Substring(MSTR.Part,1,17) as PartE,Substring(MSTR.Part,18,20) as PartREV from INVENTORY_MSTR MSTR  ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} join v_INVENTORY_MST2 Mst2 on Mstr.part = Mst2.part and Mstr.location = Mst2.location ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} join GAB_4912_USER_FIELDS UsrFld on Mstr.part = UsrFld.part and Mstr.location = UsrFld.location ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} left join v_ROUTER_SUPP_HDR on MSTR.part = Rtr_NUM left join v_BOM_MSTR  on MSTR.part = v_BOM_MSTR.Part left Join v_ENG_CHG_PART on part_17 = PartE and PartREV = Part_REV  and Locn = MSTR.location ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} where Code_Source = 'M' and OrdIncrement > 0 order by MSTR.part ",V.Local.sSQL,V.Local.sSQL)
+
+V.Local.sSQL.Set("select CONVERT(0,SQL_BIT) as 'Select',' ' as 'WO Created',' ' as WO,' '  as Suffix,MSTR.part,MSTR.location,MSTR.description,MSTR.PRODUCT_LINE,rtrim(MSTR.code_sort) as 'code_sort','' as Matlocation,QTY_ONHAND,Case When BOM_Complete Is Null Then Convert(0,SQL_BIT) When BOM_Complete = 0 Then Convert(0,SQL_BIT) When BOM_Complete = 1 Then Convert(1,SQL_BIT) End as 'BOM Reviewed',Case When v_ROUTER_SUPP_HDR.Complete Is Null Then Convert(0,SQL_BIT) When v_ROUTER_SUPP_HDR.Complete = 0 Then Convert(0,SQL_BIT) When v_ROUTER_SUPP_HDR.Complete = 1 Then Convert(1,SQL_BIT) End  as 'Router Reviewed',Case When v_ROUTER_SUPP_HDR.INACTIVE Is Null Then Convert(0,SQL_BIT) When v_ROUTER_SUPP_HDR.INACTIVE = 0 Then Convert(0,SQL_BIT) When v_ROUTER_SUPP_HDR.INACTIVE = 1 Then Convert(1,SQL_BIT) End as INACTIVE,Time_Material_Lead as 'Lead Time',dateadd(day,Time_Material_Lead,current_timestamp()) as Item_Promise_DT ")
+f.Intrinsic.String.Build(" {0} ,convert(0,SQL_DOUBLE) as qtyorder_sortcode,qty_reorder,0 as OnOrderQty,convert(0,SQL_DOUBLE) as RequiredQty,convert(UsrFld.User1 ,sql_Integer) as OrdIncrement ",V.Local.sSQL,V.Local.sSQL)
+f.Intrinsic.String.Build(" {0}  ,Qty_maximum,flag_Inactive ,Case When part_17 Is Null Then Convert(0,SQL_BIT) else Convert(1,SQL_BIT) End as 'ECCN',rtrim(MSTR.part + MSTR.location) as PartLoc,Substring(MSTR.Part,1,17) as PartE,Substring(MSTR.Part,18,20) as PartREV from INVENTORY_MSTR MSTR  ",V.Local.sSQL,V.Local.sSQL)
+f.Intrinsic.String.Build(" {0} join v_INVENTORY_MST2 Mst2 on Mstr.part = Mst2.part and Mstr.location = Mst2.location ",V.Local.sSQL,V.Local.sSQL)
+f.Intrinsic.String.Build(" {0} join GAB_4912_USER_FIELDS UsrFld on Mstr.part = UsrFld.part and Mstr.location = UsrFld.location ",V.Local.sSQL,V.Local.sSQL)
+f.Intrinsic.String.Build(" {0} left join v_ROUTER_SUPP_HDR on MSTR.part = Rtr_NUM left join v_BOM_MSTR  on MSTR.part = v_BOM_MSTR.Part left Join v_ENG_CHG_PART on part_17 = PartE and PartREV = Part_REV  and Locn = MSTR.location ",V.Local.sSQL,V.Local.sSQL)
+f.Intrinsic.String.Build(" {0} where Code_Source = 'M' and OrdIncrement > 0 order by MSTR.part ",V.Local.sSQL,V.Local.sSQL)
+
+
+F.Intrinsic.Control.If(V.DataTable.DTData.Exists)
+	f.Data.DataTable.Close("DTData")
+	f.Data.DataTable.Close("DTLINK")
+f.Intrinsic.Control.EndIf
+
+f.Data.DataTable.CreateFromSQL("DTData","CONX",V.Local.sSQL,True)
+F.Data.DataView.Create("DTData","DVImport1",22,"","")
+
+f.Data.DataTable.AddColumn("DTData","NewDueDate","string")
+f.Data.DataTable.SetValueFormat("DTData",-1,"Item_Promise_DT","NewDueDate","MM/DD/YYYY")
+
+
+Function.Data.DataTable.AddExpressionColumn("DTData", "net", "Float", "(QTY_ONHAND + OnOrderQty)-RequiredQty")
+Function.Data.DataTable.AddExpressionColumn("DTData", "PartExport", "String", "Substring(Part,1,17)")
+Function.Data.DataTable.AddExpressionColumn("DTData", "RevExport", "String", "Substring(Part,18,20)")
+
+f.Data.DataTable.AddExpressionColumn("DTData","PartRevLoc","string","TRIM(PartExport)+TRIM(RevExport)+TRIM(location)")
+
+'f.Data.DataTable.AddExpressionColumn("DTData","NewDateTemp","string","iif(len([NewDate])=10,[NewDate],iif(Substring(NewDate,2,1)='/',0 + [NewDate],Substring(NewDate,1,5)))")
+'f.Data.DataTable.AddExpressionColumn("DTData","NewDateMMDDYY","string","iif(len(NewDateTemp)=10,NewDateTemp,Substring(NewDateTemp,1,3)+0+Substring(NewDateTemp,4,10))")
+
+
+
+'f.Data.DataTable.AddExpressionColumn("DTData","ROP-FOR1","float","[qty_reorder]-[net]")
+'f.Data.DataTable.AddExpressionColumn("DTData","MAX-FOR2","float","[Qty_maximum]-[net]")
+
+f.Data.DataTable.AddExpressionColumn("DTData","ROP-FOR1","float","IIF([qty_reorder]-[net]>0,[qty_reorder]-[net],0)")
+f.Data.DataTable.AddExpressionColumn("DTData","MAX-FOR2","float","IIF([Qty_maximum]-[net]>0,[Qty_maximum]-[net],0)")
+
+'f.Data.DataTable.AddColumn("DTData","Qty","float")
+'f.Data.DataTable.SetValueFormat("DTData",-1,"MAX-FOR2","Qty","")
+
+
+'build part string
+Function.Data.DataView.ToDataTableDistinct("DTData","DVImport1","DTTemp","PartLoc")
+f.Data.DataView.Create("DTTemp","DVSTemp")
+Function.Data.DataView.ToString("DTTemp", "DVSTemp", "PartLoc", "*!*", ",", V.Local.sRet)
+
+f.Intrinsic.String.Split(V.Local.sRet,",",V.Local.sRet)
+F.Intrinsic.Control.For(v.Local.i,0,V.Local.sRet.UBound,1)
+	f.Intrinsic.String.Build("'{0}'",V.Local.sRet(v.Local.i),V.Local.sRet(v.Local.i))
+f.Intrinsic.Control.Next(v.Local.i)
+f.Intrinsic.String.Join(V.Local.sRet,",",V.Local.sRet)
+f.Data.DataTable.Close("DTTemp")
+
+
+v.Local.dtDueDate.Set(v.Screen.frmWO!dtpCutoff.Value)
+F.Intrinsic.String.Build("select rtrim(part+location) as partloc,sum(QTY_ORder-QTY_completed) as OnOrderQty from v_job_header where Date_Closed = '1900-01-01' and partloc in ({0}) and date_due <= '{1}' group by partloc",V.Local.sRet,v.Local.dtDueDate.PervasiveDate,V.Local.sSql)
+F.Data.Dictionary.CreateFromSQL("INVDIC","CONX",v.Local.ssql)
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","PartLoc","OnOrderQty")
+f.Data.Dictionary.Close("INVDIC")
+
+
+F.Intrinsic.String.Build("select rtrim(FO_Part+FO_LOCN) as partloc,sum(FO_QTY_ORD) from v_FORECAST_REQ where  partloc in ({0}) and fo_date_due <= '{1}' group by partloc",V.Local.sRet,v.Local.dtDueDate.PervasiveDate,V.Local.sSql)
+F.Data.Dictionary.CreateFromSQL("INVDIC","CONX",v.Local.ssql)
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","PartLoc","RequiredQty")
+f.Data.Dictionary.Close("INVDIC")
+
+f.Data.DataTable.AddColumn("DTData","Qty","float")
+'f.Data.DataTable.SetValueFormat("DTData",-1,"MAX-FOR2","Qty","")
+'RUN Qty defaults to ROP
+f.Data.DataTable.SetValueFormat("DTData",-1,"ROP-FOR1","Qty","")
+
+
+
+Function.Data.DataView.ToDataTableDistinct("DTData","DVImport1","DTTemp","code_sort")
+f.Data.DataView.Create("DTTemp","DVSTemp")
+Function.Data.DataView.ToString("DTTemp", "DVSTemp", "code_sort", "*!*", ",", V.Local.sRet)
+
+f.Intrinsic.String.Split(V.Local.sRet,",",V.Local.sRet)
+F.Intrinsic.Control.For(v.Local.i,0,V.Local.sRet.UBound,1)
+	f.Intrinsic.String.Build("'{0}'",V.Local.sRet(v.Local.i),V.Local.sRet(v.Local.i))
+f.Intrinsic.Control.Next(v.Local.i)
+f.Intrinsic.String.Join(V.Local.sRet,",",V.Local.sRet)
+f.Data.DataTable.Close("DTTemp")
+
+
+
+F.Intrinsic.String.Build("Select rtrim(part),qty_order from v_Inventory_mstr where part in ({0})",V.Local.sRet,V.Local.sSql)
+F.Data.Dictionary.CreateFromSQL("INVDIC","CONX",v.Local.ssql)
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","qtyorder_sortcode")
+f.Data.Dictionary.Close("INVDIC")
+
+'get sum of max by sortcode
+f.Data.DataTable.Create("DTLINK",True)
+f.Data.DataTable.AddColumn("DTLINK","SEQCODE","string")
+F.Data.Linq.Join("leftjoin","datatable","DTData*!*D","datatable","DTLINK*!*L","D.Part=L.SEQCODE","D.code_sort*!*sum(D.MAX-FOR2) as TotalMAXSort","","D.code_sort","","ImportNew",False)
+
+
+f.Data.DataTable.AddColumn("DTData","SUM_MAXFOR2","float")
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","ImportNew","code_sort","TotalMAXSort")
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","SUM_MAXFOR2")
+f.Data.Dictionary.Close("INVDIC")
+f.Data.DataTable.Close("ImportNew")
+
+'get sum of RUN Qty by sortcode
+F.Data.Linq.Join("leftjoin","datatable","DTData*!*D","datatable","DTLINK*!*L","D.code_sort=L.SEQCODE","D.code_sort*!*sum(D.Qty) as TotalQtySort","","D.code_sort","","ImportNew",False)
+
+f.Data.DataTable.AddColumn("DTData","SUM_QtySortcode","float")
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","ImportNew","code_sort","TotalQtySort")
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","SUM_QtySortcode")
+f.Data.Dictionary.Close("INVDIC")
+f.Data.DataTable.Close("ImportNew")
+
+
+''get sum of MAX
+''dummy column to sum QTY
+'f.Data.DataTable.AddColumn("DTData","DummyClmn","string","RAN")
+'F.Data.Linq.Join("leftjoin","datatable","DTData*!*D","datatable","DTLINK*!*L","D.DummyClmn=L.SEQCODE","D.DummyClmn*!*sum(D.Qty_maximum) as TotalQtyMAX","","D.DummyClmn","","ImportNew",False)
+
+'f.Data.DataTable.AddColumn("DTData","SUM_MAX","float")
+'Function.Data.Dictionary.CreateFromDataTable("INVDIC","ImportNew","DummyClmn","TotalQtyMAX")
+'F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+'F.Data.DataTable.FillFromDictionary("DTData","INVDIC","DummyClmn","SUM_MAX")
+'f.Data.Dictionary.Close("INVDIC")
+'f.Data.DataTable.Close("ImportNew")
+
+'get sum of MAX
+'dummy column to sum QTY
+'f.Data.DataTable.AddColumn("DTData","DummyClmn","string","RAN")
+
+
+'F.Data.Linq.Join("leftjoin","datatable","DTData*!*D","datatable","DTLINK*!*L","D.code_sort=L.SEQCODE","D.code_sort*!*sum(D.Qty_maximum) as TotalQtyMAX","","D.code_sort","","ImportNew",False)
+F.Data.Linq.Join("leftjoin","datatable","DTData*!*D","datatable","DTLINK*!*L","D.code_sort=L.SEQCODE","D.code_sort*!*sum(D.Qty_maximum) as TotalQtyMAX*!*sum(D.qty_reorder) as TotalQtyROP","","D.code_sort","","ImportNew",False)
+
+f.Data.DataTable.AddColumn("DTData","SUM_MAX","float")
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","ImportNew","code_sort","TotalQtyMAX")
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","SUM_MAX")
+f.Data.Dictionary.Close("INVDIC")
+
+f.Data.DataTable.AddColumn("DTData","SUM_ROP","float")
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","ImportNew","code_sort","TotalQtyROP")
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","SUM_ROP")
+f.Data.Dictionary.Close("INVDIC")
+f.Data.DataTable.Close("ImportNew")
+f.Data.DataTable.Close("DTLINK")
+
+'IF SUM(qty) for-sortcode less OrderQty-ofsortcode then A=MAX/SUM(MAX)
+
+'weighted AVG
+'F.Data.DataTable.AddExpressionColumn("DTData", "weightedAVG", "Float", "[Qty_maximum]/SUM_MAX")
+'Validate fot NaN - divion by 0 returns NaN
+F.Data.DataTable.AddExpressionColumn("DTData", "weightedAVG", "Float", "IIF([SUM_MAX]>0,[Qty_maximum]/SUM_MAX,0)")
+F.Data.DataTable.AddExpressionColumn("DTData", "weightedAVG_ROP", "Float", "IIF([SUM_ROP]>0,[qty_reorder]/SUM_ROP,0)")
+
+'Adjusted Value = weightedAVG  * difference between minimum order qty and sum of ‘Qty’
+'f.Data.DataTable.AddExpressionColumn("DTData","AdjustedValue","Float","[weightedAVG]*([qtyorder_sortcode]-[SUM_QtySortcode])")
+f.Data.DataTable.AddExpressionColumn("DTData","AdjustedValue","Float","IIF([SUM_MAX]<[qtyorder_sortcode],[weightedAVG]*([qtyorder_sortcode]-[SUM_MAX]),0)")
+f.Data.DataTable.AddExpressionColumn("DTData","AdjustedValue_ROP","Float","IIF([SUM_ROP]<[qtyorder_sortcode],[weightedAVG_ROP]*([qtyorder_sortcode]-[SUM_ROP]),0)")
+''------------------------------
+'F.Data.DataTable.AddExpressionColumn("DTData", "TEMP", "float", "IIF([SUM_QtySortcode] < [qtyorder_sortcode],[AdjustedValue]/[OrdIncrement],Qty/[OrdIncrement])")
+''If the summation of ‘Qty’ does not meet the order minimum  - 
+''UP to the next increment else down
+'F.Data.DataTable.AddExpressionColumn("DTData", "FinalVal", "Float", "IIF([SUM_QtySortcode] < [qtyorder_sortcode],(TEMP+1)*[OrdIncrement],TEMP*[OrdIncrement])")
+'---------------------------------------------
+
+'f.Data.DataTable.AddExpressionColumn("DTData","TEMP","Float","(AdjustedValue+Qty)/OrdIncrement")
+'F.Data.DataTable.AddExpressionColumn("DTData", "TEMP", "Float", "IIF([OrdIncrement]>0,(AdjustedValue+Qty)/OrdIncrement,0)")
+F.Data.DataTable.AddExpressionColumn("DTData", "TEMP", "Float", "IIF([OrdIncrement]>0,(AdjustedValue+[MAX-FOR2])/OrdIncrement,0)")
+F.Data.DataTable.AddExpressionColumn("DTData", "TEMP_ROP", "Float", "IIF([OrdIncrement]>0,(AdjustedValue_ROP+[ROP-FOR1])/OrdIncrement,0)")
+
+f.Data.DataTable.AddColumn("DTData","MIN","string")
+F.Data.DataTable.SetValueFormat("DTData", -1,"TEMP","MIN", "#0.00")
+F.Data.DataTable.AddExpressionColumn("DTData", "Nodecimal0", "long", "len(MIN)-2")
+F.Data.DataTable.AddExpressionColumn("DTData", "Nodecimal", "float", "Substring(MIN,1,Nodecimal0)")
+
+f.Data.DataTable.AddColumn("DTData","MIN_ROP","string")
+F.Data.DataTable.SetValueFormat("DTData", -1,"TEMP_ROP","MIN_ROP", "#0.00")
+F.Data.DataTable.AddExpressionColumn("DTData", "Nodecimal0_ROP", "long", "len(MIN_ROP)-2")
+F.Data.DataTable.AddExpressionColumn("DTData", "Nodecimal_ROP", "float", "Substring(MIN_ROP,1,Nodecimal0_ROP)")
+
+'F.Data.DataTable.AddExpressionColumn("DTData", "Withdecimal", "long", "TEMP-Nodecimal")
+
+'F.Data.DataTable.AddExpressionColumn("DTData", "FinalVal", "Float", "IIF([SUM_QtySortcode] < [qtyorder_sortcode],(TEMP+1)*[OrdIncrement],TEMP*[OrdIncrement])")
+'if sum_qtysortcode < qtyorder_sortcode AND temp > 0 THEN (Nodecimal+1)*[OrdIncrement] ELSE
+F.Data.DataTable.AddExpressionColumn("DTData", "FinalVal_ROP", "Float", "IIF([SUM_QtySortcode] < [qtyorder_sortcode] AND [TEMP_ROP] > 0,(Nodecimal_ROP+1)*[OrdIncrement],Nodecimal_ROP*[OrdIncrement])")
+F.Data.DataTable.AddExpressionColumn("DTData", "FinalVal", "Float", "IIF([SUM_QtySortcode] < [qtyorder_sortcode] AND [TEMP] > 0,(Nodecimal+1)*[OrdIncrement],Nodecimal*[OrdIncrement])")
+
+
+gui.frmWO.GsGridWO.AddGridViewFromDataView("GridView","DTData","DVImport1")
+
+Function.ODBC.Connection!conx.ExecuteAndReturn("Select Location FROM V_LOCATIONS ORDER BY Location",V.Local.sRet)
+f.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"")
+	f.Intrinsic.String.Replace(V.Local.sRet,"#$#","*!*",V.Local.sRet)
+	gui.frmWO.GsGridWO.ColumnEdit("GridView","Matlocation","Dropdownlist",V.Local.sRet)
+f.Intrinsic.Control.endif	
+
+gui.frmWO.GsGridWO.GetColumnCount("GridView",v.Local.iTotClmn)
+f.Intrinsic.Math.Sub(v.Local.iTotClmn,1,v.Local.iTotClmn)
+f.Intrinsic.Control.For(v.Local.i,0,v.Local.iTotClmn,1)
+	gui.frmWO.GsGridWO.GetColumnNamebyIndex("GridView",v.Local.i,v.Local.stitle)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"AllowEdit",False)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"ReadOnly",True)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"HeaderFontBold","True")
+'	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"HeaderBackColor","#7FFF00")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"HeaderBackColor","LIGHTBLUE")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"HeaderHAlignment","Center")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"HeaderWordWrap","wrap")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"MinWidth",80)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"MaxWidth",120)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"Caption",v.Local.stitle.UCase)
+f.Intrinsic.Control.Next(v.Local.i)
+
+	gui.frmWO.GsGridWO.SetGridViewProperty("GridView","ShowGroupPanel",True)
+	gui.frmWO.GsGridWO.SetGridViewProperty("GridView", "ColumnPanelRowHeight", "40")
+
+
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Qty","AllowEdit",True)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Qty","ReadOnly",False)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","NewDueDate","AllowEdit",True)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","NewDueDate","ReadOnly",False)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Matlocation","AllowEdit",True)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Matlocation","ReadOnly",False)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","select","AllowEdit",True)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","select","ReadOnly",False)
+
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Part","MinWidth",120)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","description","MinWidth",120)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","description","MaxWidth",200)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Select","Fixed","Left")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Part","Fixed","Left")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Location","Fixed","Left")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Product_line","Fixed","Left")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","description","Fixed","Left")
+	
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Part","Caption","PART NUMBER")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","location","Caption","LOC")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Matlocation","Caption","MAT LOCATION")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","description","Caption","PART DESCRIPTION")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PRODUCT_LINE","Caption","PL")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","code_sort","Caption","SORT CODE")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","QTY_ONHAND","Caption","QUANTITY ON HAND")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","qty_reorder","Caption","QTY REORDER")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","qtyorder_sortcode","Caption","QTY SORTCODE")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","INACTIVE","Caption","ROUTER INACTIVE")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","NewDueDate","Caption","DUE DATE")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","QTY","Caption","RUN QUANTITY")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","QTY","CellBackColor","LightYellow")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Matlocation","CellBackColor","LightYellow")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","NewDueDate","CellBackColor","LightYellow")
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","OrdIncrement","Caption","ORDER INCREMENT")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Qty_maximum","Caption","MAX")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","ROP-FOR1","Caption","QTY TO ROP")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","MAX-FOR2","Caption"," QTY TO MAX")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","flag_Inactive","Caption","INACTIVE")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","ECCN","Caption","ECCN EXISTS")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","FinalVal","Caption","Suggested by Max")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","FinalVal_ROP","Caption","Suggested by ROP")
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","AdjustedValue_ROP","Caption","AdjustedValue ROP")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","weightedAVG_ROP","Caption","WeightedAVG ROP")
+	
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","net","ToolTip", "on hand + on order - required")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","weightedAVG","ToolTip", "sum of max column divided into each rows max value")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","AdjustedValue","ToolTip", "the sum of this column plus the sum of qty to max must be greater than or equal to orderMIN....if sum of qty to max is greater than orderMIN then this column will be 0")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","OrdIncrement","ToolTip", "Inventory Master extra user field 1")
+
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","RequiredQty","Caption","REQUIRED QTY")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","OnOrderQty","Caption","ONORDER QTY")
+	
+'	gui.frmWO.GsGridWO.SetColumnProperty("GridView","DummyClmn","visible",false)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Item_Promise_DT","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PartLoc","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PartE","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PartRev","visible",false)  
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","weightedAVG","visible",false)       
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","AdjustedValue","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","MIN","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","TEMP","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Nodecimal0","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Nodecimal","visible",false)   
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","SUM_MAX","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","SUM_MAXFOR2","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","SUM_QtySortcode","visible",false)     
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","qtyorder_sortcode","visible",false) 
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Nodecimal0_ROP","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Nodecimal_ROP","visible",false)   
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","MIN_ROP","visible",false) 
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","TEMP_ROP","visible",false)  
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PartExport","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","RevExport","visible",false)     
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PartRevLoc","visible",false) 
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView", "Item_Promise_DT", "DisplayCustomDatetime", "d")
+	
+	gui.frmWO.GsGridWO.AddGridGroupSummaryItem("GridView","qty","Qty","Sum","| Tot Run QTY: ","","n2")
+	gui.frmWO.GsGridWO.AddGridGroupSummaryItem("GridView","qtyorder_sortcode","Quantity Order","MIN","|Order Quantity : ","","n2")
+	gui.frmWO.GsGridWO.AddGridGroupSummaryItem("GridView","Qty_maximum","Qty Maximum","Sum","| Tot Qty to Max : ","","n2")
+	gui.frmWO.GsGridWO.AddGridGroupSummaryItem("GridView","ROP-FOR1","ROP","Sum","| Tot Qty ROP : ","","n2")
+	
+'	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","code_sort","GroupIndex",0)
+'	gui.frmWO.GsGridWO.ExpandMasterRow("GridView",0)
+
+'	gui.frmWO.GsGridWO.AddStyleFormatCOndition("GridView", "Part", "tagName2","NOTEqual","Y")
+'	gui.frmWO.GsGridWO.SetStyleFormatCOnditionProperty("GridView","Part", "tagName2", "ForeColor", "Blue")
+'	gui.frmWO.GsGridWO.SetStyleFormatCOnditionProperty("GridView",  "Part", "tagName2", "ApplyToColumn", True)
+
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Part","CellForeColor",V.Color.Blue)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView", "Part", "CellFontUnderline", True)
+	
+	gui.frmWO.GsGridWO.MainView("GridView")
+
+	
+
+F.Intrinsic.UI.CloseWaitDialog
+
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.Load_GridWO.End
+
+Program.Sub.frmWO_UnLoad.Start
+f.Intrinsic.Control.Try
+
+F.Intrinsic.Control.If(V.DataTable.DTData.Exists)
+	f.Data.DataView.Close("DTData","DVImport1")
+	f.Data.DataTable.Close("DTData")
+f.Intrinsic.Control.EndIf
+
+f.ODBC.Connection!conx.Close
+f.Intrinsic.Control.End
+	
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.frmWO_UnLoad.End
+
+Program.Sub.GsGridWO_CellValueChanged.Start
+f.Intrinsic.Control.Try
+
+F.Intrinsic.Control.SelectCase(V.Args.Column)
+	F.Intrinsic.Control.CaseAny("Qty","QTY")
+	f.Data.DataTable.AcceptChanges("DTData")
+		f.Data.DataTable.Create("DTLINK",false)
+		f.Data.DataTable.AddColumn("DTLINK","SEQCODE","string")
+	
+'		gui.frmWO.GsGridWO.GetCellValueByColumnName("GridView","Qty",V.Args.RowIndex,V.Local.Lqty)
+		'get sum of Qty by sortcode
+		F.Data.Linq.Join("leftjoin","datatable","DTData*!*D","datatable","DTLINK*!*L","D.code_sort=L.SEQCODE","D.code_sort*!*sum(D.Qty) as TotalQtySort","","D.code_sort","","ImportNew",False)
+		
+		Function.Data.Dictionary.CreateFromDataTable("INVDIC","ImportNew","code_sort","TotalQtySort")
+		F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+		F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","SUM_QtySortcode")
+		f.Data.Dictionary.Close("INVDIC")
+		f.Data.DataTable.Close("ImportNew")
+		f.Data.DataTable.Close("DTLINK")
+	F.Intrinsic.Control.EndSelect
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.GsGridWO_CellValueChanged.End
+
+Program.Sub.cmdWOGEN_Click.Start
+f.Intrinsic.Control.Try
+
+V.Local.sRet.Declare
+V.Local.sfile.Declare
+V.Local.sData.Declare
+V.Local.i.Declare
+
+v.Local.sWO.Declare
+v.Local.sSuffix.Declare
+v.Local.sFilter.Declare
+v.Local.sLOC.Declare
+v.Local.sSQL.Declare
+
+Function.Intrinsic.Control.BlockEvents
+f.Intrinsic.Control.CallSub(CreatePO)
+f.Intrinsic.Control.If(v.Caller.Switches,"=","PO")
+	f.Intrinsic.Control.CallSub(CreatePO)
+f.Intrinsic.Control.ElseIf(v.Caller.Switches,"=","WO")
+	'f.Data.DataView.Close("DTData","DVImport1")
+	f.Data.DataView.SetFilter("DTData","DVImport1","select=true and FinalVal>0")
+	f.Intrinsic.Control.If(V.DataView.DTData!DVImport1.RowCount,>,0)
+	F.Intrinsic.UI.InvokeWaitDialog("Generating WO...","Please Wait...")
+		f.Data.DataTable.SetValueFormat("DTData",-1,"Part","Part","!@@@@@@@@@@@@@@@@@@@@")
+		
+		
+		Function.Data.DataView.ToString("DTData","DVImport1","PartExport*!*RevExport*!*LOCATION*!*NewDueDate*!*FinalVal","*!*",v.Ambient.NewLine,V.Local.sData)
+		f.Intrinsic.String.Build("{0}WO_4649.txt",v.Caller.LocalGSSTempDir,V.Local.sfile)
+		Function.Intrinsic.File.String2File(V.Local.sfile,V.Local.sData)
+		
+		F.Global.Callwrapper.New("GenFG","Manufacturing.CreateWorkOrderFinishedGoodPart")
+		F.Global.Callwrapper.SetProperty("GenFG","FileName",V.Local.sfile)
+		F.Global.CallWrapper.Run("GenFG")
+		F.Global.CallWrapper.GetProperty("GenFG","ReturnCode",V.Local.sRet)
+		
+	
+		F.Intrinsic.File.File2String(V.Local.sfile,V.Local.sdata)
+		Function.Data.DataTable.CreateFromString("DTOut", V.Local.sdata,"Part*!*REV*!*loc*!*Status*!*WO*!*Suffix","string*!*string*!*string*!*string*!*string*!*string","*!*",v.ambient.newline,true)
+		f.Data.DataTable.AddExpressionColumn("DTOut","PartLoc","string","TRIM(Part)+TRIM(REV)+TRIM(loc)")
+		
+		f.Data.DataView.Create("DTOut","DVOut",22,"","")
+		Function.Data.Dictionary.CreateFromDataView("INVDIC","DTOut","DVOut","PartLoc","Status")
+		F.Data.Dictionary.SetDefaultReturn("INVDIC"," ")
+		F.Data.DataTable.FillFromDictionary("DTData","INVDIC","PartRevLoc","WO Created")
+		f.Data.Dictionary.Close("INVDIC")
+	
+		
+		Function.Data.Dictionary.CreateFromDataView("INVDIC","DTOut","DVOut","PartLoc","WO")
+		F.Data.Dictionary.SetDefaultReturn("INVDIC"," ")
+		F.Data.DataTable.FillFromDictionary("DTData","INVDIC","PartRevLoc","WO")
+		f.Data.Dictionary.Close("INVDIC")
+		
+		Function.Data.Dictionary.CreateFromDataView("INVDIC","DTOut","DVOut","PartLoc","Suffix")
+		F.Data.Dictionary.SetDefaultReturn("INVDIC"," ")
+		F.Data.DataTable.FillFromDictionary("DTData","INVDIC","PartRevLoc","Suffix")
+		f.Data.Dictionary.Close("INVDIC")
+	
+		f.Intrinsic.Control.CallSub(GET_PromDate)
+	
+		f.Intrinsic.Control.If(v.DataView.DTOut!DVOut.RowCount,>,0)
+			f.Data.DataView.SetFilter("DTOut","DVOut","WO <> '' and Status <> 'R'")
+			F.Intrinsic.Control.For(V.Local.i,0,v.DataView.DTOut!DVOut.RowCount--,1)
+				f.Intrinsic.String.Build("WO='{0}' and Suffix = '{1}'",V.DataView.DTOut!DVOut(v.Local.i).WO!FieldvalTrim,V.DataView.DTOut!DVOut(v.Local.i).Suffix!FieldvalTrim,v.Local.sFilter)
+				f.Data.DataView.SetFilter("DTData","DVImport1",v.Local.sFilter)
+				
+				v.Local.sWO.Set(V.DataView.DTOut!DVOut(v.Local.i).WO!FieldvalTrim)
+				v.Local.sSuffix.Set(V.DataView.DTOut!DVOut(v.Local.i).Suffix!FieldvalTrim)
+				v.Local.sLOC.Set(V.DataView.DTData!DVImport1(0).MatLocation!FieldvalTrim)
+				f.Intrinsic.String.Build("UPDATE JOB_OPERATIONS SET LOCN = '{0}' WHERE JOB = '{1}' AND SUFFIX = '{2}' AND LMO = 'M' AND SEQ < '995000';",v.Local.sLOC,v.Local.sWO,v.Local.sSuffix,v.Local.sSQL)
+				f.ODBC.Connection!conx.Execute(v.Local.sSQL)
+				F.Global.APS.ScheduleJob(V.DataView.DTOut!DVOut(v.Local.i).WO!FieldvalTrim,V.DataView.DTOut!DVOut(v.Local.i).Suffix!FieldvalTrim,"B",V.DataView.DTOut!DVOut(v.Local.i).Date_Due!FieldvalTrim)
+			f.Intrinsic.Control.Next(V.Local.i)
+		f.Intrinsic.Control.endif
+		f.Data.DataTable.Close("DTOut")
+		f.Intrinsic.UI.Msgbox("WO Creaated Successfully")
+	f.Intrinsic.Control.Else
+		f.Intrinsic.UI.Msgbox("No rows selected.")
+	f.Intrinsic.Control.endif
+	F.Intrinsic.UI.CloseWaitDialog
+	f.Data.DataView.SetFilter("DTData","DVImport1","")
+f.Intrinsic.Control.endif
+
+Function.Intrinsic.Control.UnblockEvents
+
+F.Intrinsic.UI.CloseWaitDialog
+
+f.Intrinsic.Control.Catch
+		Function.Intrinsic.Control.UnblockEvents
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+		F.Intrinsic.UI.CloseWaitDialog
+	f.Intrinsic.Control.EndTry
+Program.Sub.cmdWOGEN_Click.End
+
+Program.Sub.GET_PromDate.Start
+f.Intrinsic.Control.Try
+
+V.Local.sRet.Declare
+v.Local.i.Declare
+V.Local.sSql.Declare
+
+
+'Function.Data.DataView.ToDataTableDistinct("DTOut","DVOut","DTTemp","WO*!*Suffix*!*Status")
+'f.Data.DataView.Create("DTTemp","DVSTemp",22,"Status='Y'","")
+'Function.Data.DataView.ToString("DTTemp", "DVSTemp", "WO*!*Suffix", "*!*", ",", V.Local.sRet)
+
+'f.Intrinsic.String.Split(V.Local.sRet,",",V.Local.sRet)
+'F.Intrinsic.Control.For(v.Local.i,0,V.Local.sRet.UBound,1)
+'	f.Intrinsic.String.Build("'{0}'",V.Local.sRet(v.Local.i),V.Local.sRet(v.Local.i))
+'f.Intrinsic.Control.Next(v.Local.i)
+'f.Intrinsic.String.Join(V.Local.sRet,",",V.Local.sRet)
+'f.Data.DataTable.Close("DTTemp")
+
+'f.Intrinsic.String.Replace(V.Local.sRet,"*!*","",V.Local.sRet)
+
+'F.Intrinsic.String.Build("Select rtrim(Job) + rtrim(Suffix) as WOSuffix,Date_Due from v_job_header where Job+Suffix in ({0})",V.Local.sRet,V.Local.sSql)
+'F.Data.Dictionary.CreateFromSQL("INVDIC","CONX",v.Local.ssql)
+'F.Data.Dictionary.SetDefaultReturn("INVDIC","")
+
+'f.Data.DataTable.AddExpressionColumn("DTOut","WOSuffix","string","WO+Suffix")
+'f.Data.DataTable.AddColumn("DTOut","Date_Due","string")
+
+'F.Data.DataTable.FillFromDictionary("DTOut","INVDIC","WOSuffix","Date_Due")
+'f.Data.Dictionary.Close("INVDIC")
+
+
+
+f.Data.DataTable.AddColumn("DTOut","Date_Due","string")
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","DTData","PartRevLoc","NewDueDate")
+F.Data.Dictionary.SetDefaultReturn("INVDIC","")
+F.Data.DataTable.FillFromDictionary("DTOut","INVDIC","PartLoc","Date_Due")
+f.Data.Dictionary.Close("INVDIC")
+
+F.Intrinsic.UI.CloseWaitDialog
+
+f.Intrinsic.Control.Catch
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+		F.Intrinsic.UI.CloseWaitDialog
+	f.Intrinsic.Control.EndTry
+Program.Sub.GET_PromDate.End
+
+Program.Sub.Load_GridPO.Start
+f.Intrinsic.Control.Try
+
+V.Local.sTypes.Declare
+V.Local.sRet.Declare
+V.Local.sSQL.Declare
+V.Local.sFile.Declare
+V.Local.sRow.Declare
+V.Local.sFieldNames.Declare
+
+v.Local.iTotClmn.Declare
+v.Local.stitle.Declare
+v.Local.i.Declare
+v.Local.dtDueDate.Declare
+
+
+
+F.Intrinsic.UI.InvokeWaitDialog("Loading...","Please Wait...")
+
+'V.Local.sSQL.Set("select CONVERT(0,SQL_BIT) as 'Select',' ' as 'POCreated',MSTR.part,MSTR.location,MSTR.description,MSTR.PRODUCT_LINE,UM_Purchasing,rtrim(MSTR.code_sort) as 'code_sort',QTY_ONHAND,dateadd(day,Time_Material_Lead,current_timestamp()) as Item_Promise_DT ")
+'f.Intrinsic.String.Build(" {0} ,0 as qtyorder_sortcode,qty_reorder,(QTY_ONHAND  + qty_onorder_Po + qty_onorder_wo) - qty_required as 'net',convert(UsrFld.User1 ,sql_Integer) as OrdIncrement ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0},Qty_maximum,Case When flag_Inactive Is Null Then Convert(0,SQL_BIT) When flag_Inactive = 0 Then Convert(0,SQL_BIT) When flag_Inactive = 1 Then Convert(1,SQL_BIT) End as flag_Inactive ,Case When part_17 Is Null Then Convert(0,SQL_BIT) else Convert(1,SQL_BIT) End as 'ECCN',rtrim(MSTR.part) + rtrim(MSTR.location) as PartLoc,Substring(MSTR.Part,1,17) as PartE,Substring(MSTR.Part,18,20) as PartREV from INVENTORY_MSTR MSTR  ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} join v_INVENTORY_MST2 Mst2 on Mstr.part = Mst2.part and Mstr.location = Mst2.location ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} join GAB_4912_USER_FIELDS UsrFld on Mstr.part = UsrFld.part and Mstr.location = UsrFld.location ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} left Join v_ENG_CHG_PART on part_17 = PartE and PartREV = Part_REV  and Locn = MSTR.location ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} where Code_Source = 'P' order by MSTR.part ",V.Local.sSQL,V.Local.sSQL)
+
+'V.Local.sSQL.Set("select CONVERT(0,SQL_BIT) as 'Select',' ' as 'POCreated',MSTR.part,MSTR.location,MSTR.description,MSTR.PRODUCT_LINE,UM_Purchasing,rtrim(MSTR.code_sort) as 'code_sort',QTY_ONHAND,Time_Material_Lead as 'Lead Time',dateadd(day,Time_Material_Lead,current_timestamp()) as Item_Promise_DT ")
+'f.Intrinsic.String.Build(" {0} ,0 as qtyorder_sortcode,qty_reorder,(QTY_ONHAND  + qty_onorder_Po + qty_onorder_wo) - qty_required as 'net',convert(UsrFld.User1 ,sql_Integer) as OrdIncrement ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0},Qty_maximum,flag_Inactive ,Case When part_17 Is Null Then Convert(0,SQL_BIT) else Convert(1,SQL_BIT) End as 'ECCN',rtrim(MSTR.part) + rtrim(MSTR.location) as PartLoc,Substring(MSTR.Part,1,17) as PartE,Substring(MSTR.Part,18,20) as PartREV from INVENTORY_MSTR MSTR  ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} join v_INVENTORY_MST2 Mst2 on Mstr.part = Mst2.part and Mstr.location = Mst2.location ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} join GAB_4912_USER_FIELDS UsrFld on Mstr.part = UsrFld.part and Mstr.location = UsrFld.location ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} left Join v_ENG_CHG_PART on part_17 = PartE and PartREV = Part_REV  and Locn = MSTR.location ",V.Local.sSQL,V.Local.sSQL)
+'f.Intrinsic.String.Build(" {0} where Code_Source = 'P' and OrdIncrement > 0 order by MSTR.part ",V.Local.sSQL,V.Local.sSQL)
+
+
+V.Local.sSQL.Set("select CONVERT(0,SQL_BIT) as 'Select',' ' as 'POCreated',MSTR.part,MSTR.location,MSTR.description,MSTR.PRODUCT_LINE,UM_Purchasing,rtrim(MSTR.code_sort) as 'code_sort',QTY_ONHAND,Time_Material_Lead as 'Lead Time',dateadd(day,Time_Material_Lead,current_timestamp()) as Item_Promise_DT ")
+f.Intrinsic.String.Build(" {0} ,convert(0,SQL_DOUBLE) as qtyorder_sortcode,qty_reorder,convert(0,SQL_DOUBLE) as OnOrderQty,convert(0,SQL_DOUBLE) as RequiredQty,convert(UsrFld.User1 ,sql_Integer) as OrdIncrement ",V.Local.sSQL,V.Local.sSQL)
+f.Intrinsic.String.Build(" {0},Qty_maximum,flag_Inactive ,Case When part_17 Is Null Then Convert(0,SQL_BIT) else Convert(1,SQL_BIT) End as 'ECCN',rtrim(MSTR.part + MSTR.location) as PartLoc,Substring(MSTR.Part,1,17) as PartE,Substring(MSTR.Part,18,20) as PartREV from INVENTORY_MSTR MSTR  ",V.Local.sSQL,V.Local.sSQL)
+f.Intrinsic.String.Build(" {0} join v_INVENTORY_MST2 Mst2 on Mstr.part = Mst2.part and Mstr.location = Mst2.location ",V.Local.sSQL,V.Local.sSQL)
+f.Intrinsic.String.Build(" {0} join GAB_4912_USER_FIELDS UsrFld on Mstr.part = UsrFld.part and Mstr.location = UsrFld.location ",V.Local.sSQL,V.Local.sSQL)
+f.Intrinsic.String.Build(" {0} left Join v_ENG_CHG_PART on part_17 = PartE and PartREV = Part_REV  and Locn = MSTR.location ",V.Local.sSQL,V.Local.sSQL)
+f.Intrinsic.String.Build(" {0} where Code_Source = 'P' and OrdIncrement > 0 order by MSTR.part ",V.Local.sSQL,V.Local.sSQL)
+
+
+F.Intrinsic.Control.If(V.DataTable.DTData.Exists)
+	f.Data.DataTable.Close("DTData")
+	f.Data.DataTable.Close("DTBLANKETDET")
+f.Intrinsic.Control.EndIf
+
+f.Data.DataTable.CreateFromSQL("DTData","CONX",V.Local.sSQL,True)
+F.Data.DataView.Create("DTData","DVImport1",22,"","")
+
+f.Data.DataTable.AddColumn("DTData","Vendor","string", "")
+f.Data.DataTable.AddColumn("DTData","Price","Float")
+f.Data.DataTable.AddColumn("DTData","Processed","String","N")
+
+
+f.Data.DataTable.AddColumn("DTData","NewDueDate","string")
+f.Data.DataTable.SetValueFormat("DTData",-1,"Item_Promise_DT","NewDueDate","MM/DD/YYYY")
+
+Function.Data.DataTable.AddExpressionColumn("DTData", "net", "Float", "(QTY_ONHAND + OnOrderQty)-RequiredQty ")
+Function.Data.DataTable.AddExpressionColumn("DTData", "PartExport", "String", "Substring(Part,1,17)")
+Function.Data.DataTable.AddExpressionColumn("DTData", "RevExport", "String", "Substring(Part,18,20)")
+
+f.Data.DataTable.AddExpressionColumn("DTData","ROP-FOR1","float","IIF([qty_reorder]-[net]>0,[qty_reorder]-[net],0)")
+f.Data.DataTable.AddExpressionColumn("DTData","MAX-FOR2","float","IIF([Qty_maximum]-[net]>0,[Qty_maximum]-[net],0)")
+
+'build part string
+Function.Data.DataView.ToDataTableDistinct("DTData","DVImport1","DTTemp","PartLoc")
+f.Data.DataView.Create("DTTemp","DVSTemp")
+Function.Data.DataView.ToString("DTTemp", "DVSTemp", "PartLoc", "*!*", ",", V.Local.sRet)
+
+f.Intrinsic.String.Split(V.Local.sRet,",",V.Local.sRet)
+F.Intrinsic.Control.For(v.Local.i,0,V.Local.sRet.UBound,1)
+	f.Intrinsic.String.Build("'{0}'",V.Local.sRet(v.Local.i),V.Local.sRet(v.Local.i))
+f.Intrinsic.Control.Next(v.Local.i)
+f.Intrinsic.String.Join(V.Local.sRet,",",V.Local.sRet)
+f.Data.DataTable.Close("DTTemp")
+
+
+v.Local.dtDueDate.Set(v.Screen.frmWO!dtpCutoff.Value)
+F.Intrinsic.String.Build("select rtrim(part+Location) as partloc,sum(qty_order-(qty_received+qty_reject)) as OnOrder_Qty from v_po_lines  where flag_recv_close <>'Y' and partloc in ({0}) and date_due_line <= '{1}' group by partloc",V.Local.sRet,v.Local.dtDueDate.PervasiveDate,V.Local.sSql)
+F.Data.Dictionary.CreateFromSQL("INVDIC","CONX",v.Local.ssql)
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","PartLoc","OnOrderQty")
+f.Data.Dictionary.Close("INVDIC")
+
+
+F.Intrinsic.String.Build("select rtrim(part+locn) as partloc, sum(hours_estimated-hours_actual) as Required_Qty from v_job_operations OPR where lmo = 'M' and flag_closed <> 'Y' and job+Suffix in (select HDR.job+HDR.Suffix  from v_job_header HDR where HDR.job = OPR.Job and HDR.suffix=OPR.suffix and Date_Closed = '1900-01-01' and Partloc in ({0})) and  OPR.date_due <= '{1}' group by partloc",V.Local.sRet,v.Local.dtDueDate.PervasiveDate,V.Local.sSql)
+F.Data.Dictionary.CreateFromSQL("INVDIC","CONX",v.Local.ssql)
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","PartLoc","RequiredQty")
+f.Data.Dictionary.Close("INVDIC")
+
+f.Data.DataTable.AddColumn("DTData","Qty","float")
+'f.Data.DataTable.SetValueFormat("DTData",-1,"MAX-FOR2","Qty","")
+f.Data.DataTable.SetValueFormat("DTData",-1,"ROP-FOR1","Qty","")
+
+Function.Data.DataView.ToDataTableDistinct("DTData","DVImport1","DTTemp","code_sort")
+f.Data.DataView.Create("DTTemp","DVSTemp")
+Function.Data.DataView.ToString("DTTemp", "DVSTemp", "code_sort", "*!*", ",", V.Local.sRet)
+
+f.Intrinsic.String.Split(V.Local.sRet,",",V.Local.sRet)
+F.Intrinsic.Control.For(v.Local.i,0,V.Local.sRet.UBound,1)
+	f.Intrinsic.String.Build("'{0}'",V.Local.sRet(v.Local.i),V.Local.sRet(v.Local.i))
+f.Intrinsic.Control.Next(v.Local.i)
+f.Intrinsic.String.Join(V.Local.sRet,",",V.Local.sRet)
+f.Data.DataTable.Close("DTTemp")
+
+F.Intrinsic.String.Build("Select rtrim(part),qty_order from v_Inventory_mstr where part in ({0})",V.Local.sRet,V.Local.sSql)
+F.Data.Dictionary.CreateFromSQL("INVDIC","CONX",v.Local.ssql)
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","qtyorder_sortcode")
+f.Data.Dictionary.Close("INVDIC")
+
+'get sum of max by sortcode
+f.Data.DataTable.Create("DTLINK",True)
+f.Data.DataTable.AddColumn("DTLINK","SEQCODE","string")
+F.Data.Linq.Join("leftjoin","datatable","DTData*!*D","datatable","DTLINK*!*L","D.Part=L.SEQCODE","D.code_sort*!*sum(D.MAX-FOR2) as TotalMAXSort","","D.code_sort","","ImportNew",False)
+
+
+f.Data.DataTable.AddColumn("DTData","SUM_MAXFOR2","float")
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","ImportNew","code_sort","TotalMAXSort")
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","SUM_MAXFOR2")
+f.Data.Dictionary.Close("INVDIC")
+f.Data.DataTable.Close("ImportNew")
+
+'get sum of Qty by sortcode
+F.Data.Linq.Join("leftjoin","datatable","DTData*!*D","datatable","DTLINK*!*L","D.code_sort=L.SEQCODE","D.code_sort*!*sum(D.Qty) as TotalQtySort","","D.code_sort","","ImportNew",False)
+
+f.Data.DataTable.AddColumn("DTData","SUM_QtySortcode","float")
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","ImportNew","code_sort","TotalQtySort")
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","SUM_QtySortcode")
+f.Data.Dictionary.Close("INVDIC")
+f.Data.DataTable.Close("ImportNew")
+
+
+F.Data.Linq.Join("leftjoin","datatable","DTData*!*D","datatable","DTLINK*!*L","D.code_sort=L.SEQCODE","D.code_sort*!*sum(D.Qty_maximum) as TotalQtyMAX*!*sum(D.qty_reorder) as TotalQtyROP","","D.code_sort","","ImportNew",False)
+
+f.Data.DataTable.AddColumn("DTData","SUM_MAX","float")
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","ImportNew","code_sort","TotalQtyMAX")
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","SUM_MAX")
+f.Data.Dictionary.Close("INVDIC")
+
+f.Data.DataTable.AddColumn("DTData","SUM_ROP","float")
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","ImportNew","code_sort","TotalQtyROP")
+F.Data.Dictionary.SetDefaultReturn("INVDIC",0)
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","code_sort","SUM_ROP")
+f.Data.Dictionary.Close("INVDIC")
+
+f.Data.DataTable.Close("ImportNew")
+'f.Data.DataTable.Close("DTLINK")
+
+
+
+
+'weighted AVG
+'F.Data.DataTable.AddExpressionColumn("DTData", "weightedAVG", "Float", "[Qty_maximum]/SUM_MAX")
+
+'Validate fot NaN - divion by 0 returns NaN
+F.Data.DataTable.AddExpressionColumn("DTData", "weightedAVG", "Float", "IIF([SUM_MAX]>0,[Qty_maximum]/SUM_MAX,0)")
+F.Data.DataTable.AddExpressionColumn("DTData", "weightedAVG_ROP", "Float", "IIF([SUM_ROP]>0,[qty_reorder]/SUM_ROP,0)")
+
+'Adjusted Value = weightedAVG  * difference between minimum order qty and sum of ‘Qty’
+f.Data.DataTable.AddExpressionColumn("DTData","AdjustedValue","Float","IIF([SUM_MAX]<[qtyorder_sortcode],[weightedAVG]*([qtyorder_sortcode]-[SUM_MAX]),0)")
+f.Data.DataTable.AddExpressionColumn("DTData","AdjustedValue_ROP","Float","IIF([SUM_ROP]<[qtyorder_sortcode],[weightedAVG_ROP]*([qtyorder_sortcode]-[SUM_ROP]),0)")
+
+
+'f.Data.DataTable.AddExpressionColumn("DTData","TEMP","Float","(AdjustedValue+Qty)/OrdIncrement")
+F.Data.DataTable.AddExpressionColumn("DTData", "TEMP", "Float", "IIF([OrdIncrement]>0,(AdjustedValue+[MAX-FOR2])/OrdIncrement,0)")
+F.Data.DataTable.AddExpressionColumn("DTData", "TEMP_ROP", "Float", "IIF([OrdIncrement]>0,(AdjustedValue_ROP+[ROP-FOR1])/OrdIncrement,0)")
+
+
+
+f.Data.DataTable.AddColumn("DTData","MIN","string")
+F.Data.DataTable.SetValueFormat("DTData",-1,"TEMP","MIN", "#0.00")
+F.Data.DataTable.AddExpressionColumn("DTData", "Nodecimal0", "long", "len(MIN)-2")
+F.Data.DataTable.AddExpressionColumn("DTData", "Nodecimal", "float", "Substring(MIN,1,Nodecimal0)")
+
+f.Data.DataTable.AddColumn("DTData","MIN_ROP","string")
+F.Data.DataTable.SetValueFormat("DTData", -1,"TEMP_ROP","MIN_ROP", "#0.00")
+F.Data.DataTable.AddExpressionColumn("DTData", "Nodecimal0_ROP", "long", "len(MIN_ROP)-2")
+F.Data.DataTable.AddExpressionColumn("DTData", "Nodecimal_ROP", "float", "Substring(MIN_ROP,1,Nodecimal0_ROP)")
+
+F.Data.DataTable.AddExpressionColumn("DTData", "FinalVal_ROP", "Float", "IIF([SUM_QtySortcode] < [qtyorder_sortcode] AND [TEMP_ROP] > 0,(Nodecimal_ROP+1)*[OrdIncrement],Nodecimal_ROP*[OrdIncrement])")
+F.Data.DataTable.AddExpressionColumn("DTData", "FinalVal", "Float", "IIF([SUM_QtySortcode] < [qtyorder_sortcode] AND [TEMP] > 0,(Nodecimal+1)*[OrdIncrement],Nodecimal*[OrdIncrement])")
+
+f.Intrinsic.Control.CallSub(Get_Price)
+
+f.Intrinsic.Control.CallSub(CalculatePOREQ)
+
+gui.frmWO.GsGridWO.AddGridViewFromDataView("GridView","DTData","DVImport1")
+
+Function.ODBC.Connection!conx.ExecuteAndReturn("Select Location FROM V_LOCATIONS ORDER BY Location",V.Local.sRet)
+f.Intrinsic.Control.If(V.Local.sRet.Trim,<>,"")
+	f.Intrinsic.String.Replace(V.Local.sRet,"#$#","*!*",V.Local.sRet)
+	gui.frmWO.GsGridWO.ColumnEdit("GridView","location","Dropdownlist",V.Local.sRet)
+f.Intrinsic.Control.endif	
+
+gui.frmWO.GsGridWO.GetColumnCount("GridView",v.Local.iTotClmn)
+f.Intrinsic.Math.Sub(v.Local.iTotClmn,1,v.Local.iTotClmn)
+f.Intrinsic.Control.For(v.Local.i,0,v.Local.iTotClmn,1)
+	gui.frmWO.GsGridWO.GetColumnNamebyIndex("GridView",v.Local.i,v.Local.stitle)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"AllowEdit",False)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"ReadOnly",True)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"HeaderFontBold","True")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"HeaderBackColor","#CCCCFF")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"HeaderHAlignment","Center")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"HeaderWordWrap","wrap")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"MinWidth",80)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"MaxWidth",120)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView",v.Local.stitle,"Caption",v.Local.stitle.UCase)
+f.Intrinsic.Control.Next(v.Local.i)
+
+	gui.frmWO.GsGridWO.SetGridViewProperty("GridView","ShowGroupPanel",True)
+	gui.frmWO.GsGridWO.SetGridViewProperty("GridView", "ColumnPanelRowHeight", "40")
+
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Qty","AllowEdit",True)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Qty","ReadOnly",False)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","NewDueDate","AllowEdit",True)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","NewDueDate","ReadOnly",False)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","location","AllowEdit",True)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","location","ReadOnly",False)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","select","AllowEdit",True)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","select","ReadOnly",False)
+
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Part","MinWidth",120)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","description","MinWidth",120)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","description","MaxWidth",200)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Select","Fixed","Left")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Part","Fixed","Left")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Location","Fixed","Left")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Product_line","Fixed","Left")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","description","Fixed","Left")
+	
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Part","Caption","PART NUMBER")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","location","Caption","LOC")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","description","Caption","PART DESCRIPTION")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PRODUCT_LINE","Caption","PL")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","code_sort","Caption","SORT CODE")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","QTY_ONHAND","Caption","QUANTITY ON HAND")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","qty_reorder","Caption","QTY REORDER")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","qtyorder_sortcode","Caption","SORTCODE")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","NewDueDate","Caption","DUE DATE")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","QTY","Caption","RUN QUANTITY")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","QTY","CellBackColor","LightYellow")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","NewDueDate","CellBackColor","LightYellow")
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","OrdIncrement","Caption","ORDER INCREMENT")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Qty_maximum","Caption","MAX")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","ROP-FOR1","Caption","QTY TO ROP")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","MAX-FOR2","Caption"," QTY TO MAX")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","flag_Inactive","Caption","INACTIVE")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","ECCN","Caption","ECCN EXISTS")
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","RequiredQty","Caption","REQUIRED QTY")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","OnOrderQty","Caption","ONORDER QTY")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","FinalVal","Caption","Suggested by Max")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","FinalVal_ROP","Caption","Suggested by ROP")
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","net","ToolTip", "on hand + on order - required")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","weightedAVG","ToolTip", "sum of rop column divided into each rows rop value")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","AdjustedValue","ToolTip", "the sum of this column plus the sum of qty to rop must be greater than or equal to orderMIN....if sum of qty to rop is greater than orderMIN then this column will be 0")
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","OrdIncrement","ToolTip", "Inventory Master extra user field 1")
+
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Item_Promise_DT","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PartLoc","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PartE","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PartRev","visible",false)  
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","weightedAVG","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","AdjustedValue","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","MIN","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","TEMP","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Nodecimal0","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Nodecimal","visible",false) 
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","weightedAVG_ROP","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","AdjustedValue_ROP","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","MIN_ROP","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","TEMP_ROP","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Nodecimal0_ROP","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Nodecimal_ROP","visible",false) 
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","SUM_MAX","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","SUM_ROP","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","SUM_MAXFOR2","visible",false)  
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","SUM_QtySortcode","visible",false)   
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","qtyorder_sortcode","visible",false) 
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","PartExport","visible",false)       
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","RevExport","visible",false)     
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Processed","visible",false)     
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView", "Item_Promise_DT", "DisplayCustomDatetime", "d")
+
+
+	gui.frmWO.GsGridWO.AddGridGroupSummaryItem("GridView","qty","Qty","Sum","| Tot Run QTY: ","","n2")
+	gui.frmWO.GsGridWO.AddGridGroupSummaryItem("GridView","qtyorder_sortcode","Quantity Order","MIN","|Order Quantity : ","","n2")
+	gui.frmWO.GsGridWO.AddGridGroupSummaryItem("GridView","Qty_maximum","Qty Maximum","Sum","| Tot Qty to Max : ","","n2")
+	gui.frmWO.GsGridWO.AddGridGroupSummaryItem("GridView","ROP-FOR1","ROP","Sum","| Tot Qty ROP : ","","n2")
+'	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","code_sort","GroupIndex",0)
+	
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView","Part","CellForeColor",V.Color.Blue)
+	gui.frmWO.GsGridWO.SetColumnProperty("GridView", "Part", "CellFontUnderline", True)
+
+	gui.frmWO.GsGridWO.MainView("GridView")
+
+
+F.Intrinsic.UI.CloseWaitDialog
+
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+
+Program.Sub.Load_GridPO.End
+
+Program.Sub.Get_Price.Start
+f.Intrinsic.Control.Try
+
+v.Local.sSql.Declare
+v.Local.lQty.Declare
+v.Local.sVendor.Declare
+v.Local.sPart.Declare
+V.Local.i.Declare
+v.Local.sFilter.Declare
+v.Local.bFlag.Declare
+v.Local.sFilter0.Declare
+
+
+'Get Lowst Price & Vendor for SortCode
+v.Local.sFilter0.Set("Vendor= '' and Qty > 0 and Processed <> 'Y'")
+f.Intrinsic.Control.Label("Lbl01")
+
+f.Data.DataView.SetFilter("DTData","DVImport1",v.Local.sFilter0)
+F.Intrinsic.Control.For(V.Local.i,0,v.DataView.DTData!DVImport1.RowCount--,1)
+	f.Intrinsic.Control.If(V.DataView.DTData!DVImport1(v.Local.i).Processed!Fieldval,<>,"Y")
+		v.Local.sPart.Set(V.DataView.DTData!DVImport1(v.Local.i).code_sort!FieldvalTrim)
+		v.Local.lQty.Set(V.DataView.DTData!DVImport1(v.Local.i).QTY!Fieldval)
+		f.Intrinsic.String.Build("select top 1 Unit_Price ,vend_qte_header.vendor from VEND_QTE_LINES join vend_qte_header on vend_qte_lines.part = vend_qte_header.part and vend_qte_lines.seq = vend_qte_header.seq  where vend_qte_lines.part = '{0}' and quantity <= {1} order by unit_price asc;",v.Local.sPart,v.Local.lQty,v.Local.sSql)
+		F.ODBC.Connection!conx.OpenRecordsetRO("rst",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.conx!rst.EOF,=,False)	
+			f.Intrinsic.String.Build("code_sort='{0}' and Qty >= '{1}'",v.Local.sPart,v.Local.lQty,v.Local.sFilter)
+			f.Data.DataView.SetFilter("DTData","DVImport1",v.Local.sFilter)
+			f.Data.DataView.SetValue("DTData","DVImport1",-1,"vendor",v.ODBC.conx!rst.FieldVal!vendor)
+			f.Data.DataView.SetValue("DTData","DVImport1",-1,"Price",v.ODBC.conx!rst.FieldVal!Unit_Price)
+			f.Data.DataView.SetValue("DTData","DVImport1",-1,"Processed","Y")
+			v.Local.bFlag.Set(True)
+			F.ODBC.conx!rst.Close
+			f.Intrinsic.Control.ExitFor(v.Local.i)
+		f.Intrinsic.Control.endif
+		F.ODBC.conx!rst.Close
+		v.Local.bFlag.Set(False)
+	f.Intrinsic.Control.endif
+f.Intrinsic.Control.Next(V.Local.i)
+
+f.Intrinsic.Control.If(v.Local.bFlag,=,True)
+	f.Intrinsic.Control.GoTo("Lbl01")
+f.Intrinsic.Control.endif
+
+f.Data.DataView.SetFilter("DTData","DVImport1","")
+
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.Get_Price.End
+
+Program.Sub.CalculatePOREQ.Start
+f.Intrinsic.Control.Try
+
+v.Local.sSql.Declare
+V.Local.sFilter.Declare
+
+
+'Total Qty_order for PART+LOC
+v.Local.sSql.Set("select rtrim(hdr.purchase_order) + rtrim(record_no)  as PONOL,rtrim(Det.part) + rtrim(Det.Location) as Partloc,Qty_order  from V_PO_LINES DET join V_PO_header Hdr on Det.purchase_order = Hdr.purchase_order join v_INVENTORY_MST2 Mst2 on DET.part = Mst2.part and DET.location = Mst2.location where type =1 and Code_Source = 'P'")
+f.Data.DataTable.CreateFromSQL("DTBLKORD","CONX",V.Local.sSQL)
+
+'Qty_order Blanket Order already Released
+v.Local.sSql.Set("select rtrim(BLANKET_PO) + rtrim(BLANKET_PO_LINE) as PONOL,rtrim(Det.part) + rtrim(Det.location) as 'PartLoc',sum(Qty_order) as RelQty from V_PO_LINES Det join v_INVENTORY_MST2 Mst2 on DET.part = Mst2.part and DET.location = Mst2.location where BLANKET_PO <> '' and  Code_Source = 'P' group by BLANKET_PO,BLANKET_PO_LINE,PartLoc ")
+
+f.Data.DataTable.CreateFromSQL("DTBLKREL","CONX",V.Local.sSQL)
+
+F.Data.Linq.Join("Leftjoin","datatable","DTBLKORD*!*B","datatable","DTBLKREL*!*R","B.PONOL=R.PONOL","B.PONOL*!*B.Partloc*!*B.Qty_order*!*R.RelQty","","","","DTBLANKET",True)
+
+
+f.Data.DataTable.AddExpressionColumn("DTBLANKET","PONO","String","Substring(PONOL,1,7)")
+f.Data.DataTable.AddExpressionColumn("DTBLANKET","POLineNo","String","Substring(PONOL,8,11)")
+F.Data.DataTable.AddExpressionColumn("DTBLANKET", "POREMQty1", "Long", "ISNull(RelQty,0)")
+'QTY Available to Relase Blanket Order
+F.Data.DataTable.AddExpressionColumn("DTBLANKET", "BLKREMQty", "Long", "Qty_order-POREMQty1")
+
+f.Data.DataTable.AddColumn("DTBLANKET","POREMQty","long",0)
+f.Data.DataTable.AddColumn("DTData","POREMQty","long")
+
+f.Data.DataTable.Create("DTLINK",True)
+f.Data.DataTable.AddColumn("DTLINK","SEQCODE","string")
+F.Data.Linq.Join("leftjoin","datatable","DTBLANKET*!*D","datatable","DTLINK*!*L","D.PartLoc=L.SEQCODE","D.PartLoc*!*sum(D.BLKREMQty) as BLKQTYITM","","D.PartLoc","","DTBLKITM",True)
+	
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","DTBLKITM","PartLoc","BLKQTYITM")
+F.Data.Dictionary.SetDefaultReturn("INVDIC","0")
+F.Data.DataTable.FillFromDictionary("DTData","INVDIC","PartLoc","POREMQty")
+f.Data.Dictionary.Close("INVDIC")
+
+'Create Standalone PO for this QTY
+F.Data.DataTable.AddExpressionColumn("DTData", "StandAlonePOQTY", "Long", "FinalVal-POREMQty")
+
+f.Data.DataTable.AddColumn("DTBLANKET","POBLKRELQty","long")
+
+Function.Data.Dictionary.CreateFromDataTable("INVDIC","DTDATA","PartLoc","FinalVal")
+F.Data.Dictionary.SetDefaultReturn("INVDIC","0")
+F.Data.DataTable.FillFromDictionary("DTBLANKET","INVDIC","PartLoc","POBLKRELQty")
+f.Data.Dictionary.Close("INVDIC")
+
+v.Local.sSql.Set("select DET.PURCHASE_ORDER , Record_no, DET.part,DET.location,Description,Product_Line,Date_Due_Line,Cost,UM_Purchasing,GL_Account_Line,DET.Vendor,rtrim(DET.part)+rtrim(DET.Location) as Partloc from V_PO_LINES DET join  V_PO_HEADER HDR on DET.PURCHASE_ORDER = HDR.PURCHASE_ORDER join v_INVENTORY_MST2 Mst2 on DET.part = Mst2.part and DET.location = Mst2.location where  Code_Source = 'P' and  TYpe = 1")
+f.Data.DataTable.CreateFromSQL("DTBLKTEMP","CONX",V.Local.sSQL)
+
+F.Data.Linq.Join("Innerjoin","datatable","DTBLANKET*!*B","datatable","DTBLKTEMP*!*R","B.PONO=R.PURCHASE_ORDER and B.POLineNo=R.Record_no","B.PONO*!*B.POLineNo*!*B.POBLKRelQty*!*B.BLKREMQTY*!*B.POREMQty*!*R.Part*!*R.Location*!*R.Description*!*R.Product_Line*!*R.UM_Purchasing*!*R.Cost as price*!*R.Date_Due_Line as NewDueDate*!*R.Vendor*!*R.GL_Account_Line*!*R.Partloc","","","","DTBLANKETDET",True)
+
+
+V.Local.i.Declare
+V.Local.lPORELQtyTEMP.Declare
+V.Local.lPORELQty.Declare
+V.Local.lBLKREMQTY.Declare
+V.Local.lPOBLKRELQty.Declare
+		
+f.Data.DataView.Create("DTBLANKETDET","DVBlanket",22,"POBLKRELQty>0 and BLKREMQTY>0","")
+f.Data.DataView.Create("DTBLANKETDET","DVFilter",22,"","")
+f.Intrinsic.Control.If(v.DataView.DTBLANKETDET!DVBlanket.RowCount,>,0)
+	F.Intrinsic.Control.For(V.Local.i,0,v.DataView.DTBLANKETDET!DVBlanket.RowCount--,1)
+		V.Local.lPOBLKRELQty.Set(V.DataView.DTBLANKETDET!DVBlanket(v.Local.i).POBLKRELQty!Fieldval)
+		V.Local.lBLKREMQTY.Set(V.DataView.DTBLANKETDET!DVBlanket(v.Local.i).BLKREMQTY!Fieldval)
+		f.Intrinsic.Math.Sub(V.Local.lPOBLKRELQty,V.Local.lBLKREMQTY,V.Local.lPORELQtyTEMP)
+		f.Intrinsic.Control.If(V.Local.lPORELQtyTEMP,<,0)
+			'ckeck to see if POBLKQTY is more than REQ quantity
+			f.Intrinsic.Math.add(V.Local.lBLKREMQTY,V.Local.lPORELQtyTEMP,V.Local.lPORELQty)
+			f.Data.DataView.SetValue("DTBLANKETDET","DVBlanket",V.Local.i,"POREMQty",V.Local.lPORELQty)
+		f.Intrinsic.Control.Else
+			f.Data.DataView.SetValue("DTBLANKETDET","DVBlanket",V.Local.i,"POREMQty",V.DataView.DTBLANKETDET!DVBlanket(v.Local.i).BLKREMQTY!Fieldval)
+		f.Intrinsic.Control.endif
+		f.Intrinsic.String.Build("PartLoc='{0}'",V.DataView.DTBLANKETDET!DVBlanket(v.Local.i).PARTLOC!Fieldval,V.Local.sFilter)
+		f.Data.DataView.SetFilter("DTBLANKETDET","DVFilter",v.Local.sFilter)
+		'update Req QTY
+		f.Data.DataView.SetValue("DTBLANKETDET","DVFilter",-1,"POBLKRELQty",V.Local.lPORELQtyTEMP)
+	f.Intrinsic.Control.Next(V.Local.i)
+f.Intrinsic.Control.endif
+Function.Intrinsic.Debug.Stop
+
+f.Data.DataTable.Close("DTBLKORD")
+f.Data.DataTable.Close("DTBLKREL")
+f.Data.DataTable.Close("DTBLANKET")
+f.Data.DataTable.Close("DTLINK")
+f.Data.DataTable.Close("DTBLKITM")
+
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.CalculatePOREQ.End
+
+Program.Sub.NewPurorder.Start
+f.Intrinsic.Control.Try
+
+V.Local.sTemp.Declare(String)
+V.Local.sTempFull.Declare(String)
+V.Local.sPart.Declare(String)
+V.Local.sVenID.Declare(String)
+V.Local.iQty.Declare(long)
+V.Local.sSql.Declare(String)
+V.Local.sVenName.Declare(String)
+V.Local.sVenAdd1.Declare(String)
+V.Local.sVenAdd2.Declare(String)
+V.Local.sVenState.Declare(String)
+V.Local.sVenZip.Declare(String)
+V.Local.sVenCity.Declare(String)
+V.Local.sVenAttn.Declare(String)
+V.Local.sGL.Declare(String)
+V.Local.sCurrency.Declare(String)
+V.local.sPODate.Declare(String)
+V.local.sPODueDate.Declare(String)
+V.Local.iLno.Declare(long)
+V.Local.sRet.Declare(String)
+V.Local.sPONumber.Declare(String)
+V.Local.sReqNo.Declare(String)
+V.Local.sFilName.Declare(String)
+
+F.Intrinsic.String.LPad(V.Args.PO,"0",7,V.Local.sPONumber)
+V.Local.sVenID.set(v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).Vendor.fieldvaltrim)
+F.Intrinsic.String.LPad(V.Local.sVenID.Trim,"0",6,V.Local.sVenID)
+f.Intrinsic.Control.If(v.Args.DTName,=,"DTData")
+	V.Local.iQty.Set(v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).StandAlonePOQTY.fieldval)
+f.Intrinsic.Control.Else
+	V.Local.iQty.Set(v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).POREMQty.fieldval)
+f.Intrinsic.Control.endif
+
+F.Intrinsic.String.RPad(v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).Part.fieldvaltrim," ",20,V.Local.sPart)
+
+'	f.Intrinsic.Control.If(V.Args.LnNo,=,1)
+		'--# Header #--
+			F.Intrinsic.String.Concat("select v.vendor,v.Name_Vendor,v.address1, v.address2, V.City, v.rec , V.state, V.Code_Zip, V.Country, V.attention, V.Normal_GL_Account, C.Buyer+C.Territory as CurrencyCode from VENDOR_MASTER as V left join (select *  from VENDOR_MASTER where rec=4)as c on c.vendor=v.vendor where v.rec=1 and v.Vendor='",V.local.sVenID,"'",V.Local.sSql)
+			F.ODBC.Connection!Conx.OpenLocalRecordsetRO("rstVend",V.Local.sSql)
+			F.Intrinsic.Control.If(V.ODBC.Conx!rstVend.EOF,=,False)
+				V.Local.sVenName.set(V.ODBC.Conx!rstVend.FieldVal!Name_Vendor)
+				V.Local.sVenAdd1.set(V.ODBC.Conx!rstVend.FieldVal!address1)
+				V.Local.sVenAdd2.set(V.ODBC.Conx!rstVend.FieldVal!address2)
+				V.Local.sVenState.set(V.ODBC.Conx!rstVend.FieldVal!State)
+				V.Local.sVenZip.set(V.ODBC.Conx!rstVend.FieldVal!Code_Zip)
+				V.Local.sVenCity.set(V.ODBC.Conx!rstVend.FieldVal!City)
+				V.Local.sVenAttn.set(V.ODBC.Conx!rstVend.FieldVal!Attention)
+				V.Local.sGL.set(V.ODBC.Conx!rstVend.FieldVal!Normal_GL_Account)
+				V.Local.sCurrency.set(V.ODBC.Conx!rstVend.FieldVal!CurrencyCode)
+			F.Intrinsic.Control.EndIf
+			F.ODBC.Conx!rstVend.Close
+
+			'PO Date
+			F.Intrinsic.String.Format(V.ambient.Date,"MMDDYY",V.local.sPODate)
+			'RequiredDate,DueDate
+			F.Intrinsic.String.Format(v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).NewDueDate.fieldval,"MMDDYY",V.local.sPODueDate)
+
+			'A Record
+		'PO,Rec Type
+		F.Intrinsic.String.Concat(V.Local.sPONumber,"  A",V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",19,V.Local.sTemp)
+		'Ship Via
+		V.Local.sRet.Set("")
+		F.Intrinsic.String.RPad(V.Local.sRet," ",15,V.Local.sRet)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+		'FOB
+		V.Local.sRet.Set("")
+		F.Intrinsic.String.RPad(V.Local.sRet," ",15,V.Local.sRet)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+		'Terms
+		V.Local.sRet.Set("")
+		F.Intrinsic.String.RPad(V.Local.sRet," ",12,V.Local.sRet)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+		
+		V.Local.sRet.Set("")
+		F.Intrinsic.String.RPad(V.Local.sRet," ",82,V.Local.sRet)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+		
+
+''		V.Local.sFilName.set("Ranjit")
+'		f.Intrinsic.String.Right(v.dataTable.DTPO(V.Args.LnNo).Filname.fieldvaltrim,30,V.Local.sFilName)
+'		'Special Instructions - Line 1 - 3
+'		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sFilName,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",112,V.Local.sTemp)
+		
+		'PO Date
+		F.Intrinsic.String.Rpad(V.Local.sTemp," ",195,V.Local.sTemp)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.local.sPODate,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",207,V.Local.sTemp)
+		'Date Due
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.local.sPODueDate,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",229,V.Local.sTemp)
+		'GL Account
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sGL,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",267,V.Local.sTemp)
+		'Vendor #
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenID,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",298,V.Local.sTemp)
+	'	'User 1 - Sales Order#, New Line
+	'	F.Intrinsic.String.Concat(V.Local.sTemp,V.Global.sSO,V.Local.sTemp)
+
+		F.Intrinsic.String.Concat(V.Local.sTempFull,V.Local.sTemp,V.Ambient.NewLine,V.Local.sTempFull)
+
+			'B Record
+		'PO,Rec Type,Name Vendor
+		F.Intrinsic.String.Concat(V.Local.sPONumber,"  B",V.Local.sVenName,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",40,V.Local.sTemp)
+		'Vendor Address
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenAdd1,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",70,V.Local.sTemp)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenAdd2,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",190,V.Local.sTemp)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenCity,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",210,V.Local.sTemp)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenState,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",212,V.Local.sTemp)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenZip,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",237,V.Local.sTemp)
+		'Attention
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenAttn,V.Local.sTemp)
+
+		F.Intrinsic.String.Concat(V.Local.sTempFull,V.Local.sTemp,V.Ambient.NewLine,V.Local.sTempFull)
+
+
+		'C Record
+		F.Intrinsic.String.Concat(V.Local.sPONumber,"  C",V.Local.sVenName,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",40,V.Local.sTemp)
+		'Vendor Address
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenAdd1,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",70,V.Local.sTemp)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenAdd2,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",190,V.Local.sTemp)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenCity,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",210,V.Local.sTemp)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenState,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",212,V.Local.sTemp)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenZip,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",237,V.Local.sTemp)
+		'Attention
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sVenAttn,V.Local.sTemp)
+
+		F.Intrinsic.String.Concat(V.Local.sTempFull,V.Local.sTemp,V.Ambient.NewLine,V.Local.sTempFull)
+'	f.Intrinsic.Control.EndIf 
+
+	'PO, Line,Part
+''	f.Intrinsic.Math.Add(V.Args.LnNo,1,V.Local.iLno)
+'	V.Local.iLno.Set(1)
+'	F.Intrinsic.String.LPad(V.Local.iLno,"0",3,V.Local.sRet)
+
+	F.Intrinsic.String.LPad(V.Args.POLINE,"0",3,V.Local.sRet)
+'	F.Intrinsic.String.LPad(v.dataTable.DTPO(V.Args.LnNo).RecordNo.fieldval,"0",3,V.Local.sRet)
+
+	F.Intrinsic.String.Concat(V.Local.sPONumber,V.Local.sRet,v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).Part.fieldval,V.Local.sTemp)
+	F.Intrinsic.String.RPad(V.Local.sTemp," ",30,V.Local.sTemp)
+
+	'LOC
+	V.Local.sRet.Set(v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).Location.fieldval)
+	F.Intrinsic.String.RPad(V.Local.sRet," ",32,V.Local.sRet)
+	F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+
+	'Description
+	F.Intrinsic.String.Concat(V.Local.sTemp,v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).Description.fieldvaltrim,V.Local.sTemp)
+	F.Intrinsic.String.RPad(V.Local.sTemp," ",62,V.Local.sTemp)
+	'UM
+	F.Intrinsic.String.Concat(V.Local.sTemp,v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).UM_Purchasing.fieldvaltrim,V.Local.sTemp)
+'	F.Intrinsic.String.Rpad(V.Local.sTemp," ",87,V.Local.sTemp)
+	F.Intrinsic.String.Rpad(V.Local.sTemp," ",77,V.Local.sTemp)
+
+	'Requisition Number
+	V.Local.sRet.Set("")
+	F.Intrinsic.String.RPad(V.Local.sRet," ",87,V.Local.sRet)
+	F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+
+	'Taxable
+	F.Intrinsic.String.Concat(V.Local.sTemp,"",V.Local.sTemp)
+	F.Intrinsic.String.RPad(V.Local.sTemp," ",100,V.Local.sTemp)
+
+
+	'GL Account
+'	F.Intrinsic.String.Concat(V.Local.sTemp,"702",V.Local.sTemp)
+'	F.Intrinsic.String.RPad(V.Local.sTemp," ",121,V.Local.sTemp)
+
+	f.Intrinsic.Control.If(v.Args.DTName,=,"DTData")
+		f.Intrinsic.Control.CallSub(getglacct,"POPart",v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).Part.fieldval,"PRL",v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).Product_line.fieldval,"PO",V.Local.sPONumber.long,"LN",V.Local.iLno,"Loc",v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).Location.fieldval)
+
+		F.Intrinsic.String.Concat(V.Local.sTemp,v.Args.GLACCT,V.Local.sTemp)
+	f.Intrinsic.Control.Else
+		F.Intrinsic.String.Concat(V.Local.sTemp,v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).GL_Account_Line.fieldval,V.Local.sTemp)
+	f.Intrinsic.Control.EndIf
+	F.Intrinsic.String.RPad(V.Local.sTemp," ",121,V.Local.sTemp)
+
+	'PL
+	F.Intrinsic.String.Concat(V.Local.sTemp,v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).Product_line.fieldval,V.Local.sTemp)
+	F.Intrinsic.String.RPad(V.Local.sTemp," ",124,V.Local.sTemp)
+
+'	V.Local.sRet.Set("")
+'	F.Intrinsic.String.RPad(V.Local.sRet," ",124,V.Local.sRet)
+'	F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+
+	'RequiredDat eLN DueDate
+	F.Intrinsic.String.Format(v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).NewDueDate.fieldval,"MMDDYY",V.local.sPODueDate)
+	F.Intrinsic.String.Concat(V.Local.sTemp,V.local.sPODueDate,V.Local.sTemp)
+	F.Intrinsic.String.RPad(V.Local.sTemp," ",136,V.Local.sTemp)
+	'Cost
+	F.Intrinsic.String.Concat(V.Local.sTemp,v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).Price.fieldval,V.Local.sTemp)
+	F.Intrinsic.String.RPad(V.Local.sTemp," ",168,V.Local.sTemp)
+	'Qty
+	F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.iQty,V.Local.sTemp)
+	F.Intrinsic.String.RPad(V.Local.sTemp," ",339,V.Local.sTemp)
+
+	'Currency
+	F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sCurrency,V.Local.sTemp)
+'	F.Intrinsic.String.RPad(V.Local.sTemp," ",358,V.Local.sTemp)
+	F.Intrinsic.String.RPad(V.Local.sTemp," ",548,V.Local.sTemp)
+
+
+'	Requisition Line
+	V.Local.sRet.Set("")
+	F.Intrinsic.String.Concat(V.Local.sTemp,"",V.Local.sTemp)
+	F.Intrinsic.String.RPad(V.Local.sTemp," ",551,V.Local.sTemp)
+
+
+
+
+'	'PL
+'	F.Intrinsic.String.Concat(V.Local.sTemp,v.dataview.DTBatchTemp!DTBatchViewTemp1(V.Args.LnNo).Product_Line.fieldvaltrim,V.Local.sTemp)
+'	F.Intrinsic.String.RPad(V.Local.sTemp," ",136,V.Local.sTemp)
+'	'Cost
+'	F.Intrinsic.String.Concat(V.Local.sTemp,v.dataview.DTBatchTemp!DTBatchViewTemp1(V.Args.LnNo).unit_price.fieldval,V.Local.sTemp)
+'	F.Intrinsic.String.RPad(V.Local.sTemp," ",168,V.Local.sTemp)
+'	'Qty
+'	F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.iQty,V.Local.sTemp)
+'	F.Intrinsic.String.RPad(V.Local.sTemp," ",339,V.Local.sTemp)
+'	'Currency
+'	F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sCurrency,V.Local.sTemp)
+'	F.Intrinsic.String.RPad(V.Local.sTemp," ",358,V.Local.sTemp)
+'	'User_1
+'	F.Intrinsic.String.Concat(V.Local.sTemp,"",V.Local.sTemp)
+'	F.Intrinsic.String.RPad(V.Local.sTemp," ",388,V.Local.sTemp)
+'	'User 2 -remaining of description
+'	F.Intrinsic.String.Mid(V.uGlobal.uPOLines(v.Local.i)!Description,31,30,V.Local.sRet)
+'	F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+'	'User 3 - remaining of description
+'	F.Intrinsic.String.Mid(V.uGlobal.uPOLines(v.Local.i)!Description,61,30,V.Local.sRet)
+'	F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+'	'User 4 - remaining of description
+'	F.Intrinsic.String.Mid(V.uGlobal.uPOLines(v.Local.i)!Description,91,30,V.Local.sRet)
+'	F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+'	F.Intrinsic.String.RPad(V.Local.sTemp," ",478,V.Local.sTemp)
+'	'User 5
+'	F.Intrinsic.String.Concat(V.Local.sTemp,V.uGlobal.uPOLines(v.Local.i)!User_5,V.Local.sTemp)
+	'Add line to variable that will be written to PURORDER.txt
+	
+
+	
+	f.Intrinsic.Control.If(v.Args.DTName,<>,"DTData")
+		'BlanketPO
+		F.Intrinsic.String.Concat(V.Local.sTemp,"",V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",642,V.Local.sTemp)
+	
+		V.Local.sRet.Set(v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).PONO.fieldval)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",649,V.Local.sTemp)
+		
+		'BlanketLINE
+		V.Local.sRet.Set(v.DataView.[v.Args.DTName]![v.Args.DVName](V.Args.LnNo).POLINENO.fieldval)
+		F.Intrinsic.String.Concat(V.Local.sTemp,V.Local.sRet,V.Local.sTemp)
+		F.Intrinsic.String.RPad(V.Local.sTemp," ",653,V.Local.sTemp)
+	f.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.String.Concat(V.Local.sTempFull,V.Local.sTemp,V.Ambient.NewLine,V.Local.sTempFull)
+
+
+	Function.Intrinsic.Variable.AddRV("POTEXT",V.Local.sTempFull)
+
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.NewPurorder.End
+
+Program.Sub.CreatePO.Start
+f.Intrinsic.Control.Try
+
+V.Local.sSql.Declare
+v.Local.sPO.Declare
+V.Local.sPURORDER.Declare
+V.Local.sFName.Declare
+V.Local.sStatus.declare
+V.Local.sReturnFileName.Declare
+v.Local.i.Declare
+v.Local.sfilter.Declare
+
+
+Function.Intrinsic.UI.ChangeWaitStatus("Creating PO...")
+		'Create PO
+			'---### Get Last PO Number ###---
+		V.Local.sSql.Set("select LAST_PO_NUM from LAST_PO where ASS_SYS='PUR' and ASS_SUB_SYS='CTL'")
+		F.ODBC.Connection!Conx.OpenLocalRecordsetRO("rstLastPO",V.Local.sSql)
+		F.Intrinsic.Control.If(V.ODBC.Conx!rstLastPO.EOF,=,False)
+			v.Local.sPO.Set(V.ODBC.Conx!rstLastPO.FieldVal!LAST_PO_NUM)
+		f.Intrinsic.Control.Else
+			f.Intrinsic.UI.Msgbox("PO not found")
+			F.ODBC.Conx!rstLastPO.Close
+			f.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+		F.ODBC.Conx!rstLastPO.Close
+		
+'		f.Data.DataView.SetFilter("DTData","DVImport1","StandAlonePOQTY>0 and Vendor <> '' and select=true")
+'		F.Intrinsic.Control.For(v.Local.i,0,v.DataView.DTData!DVImport1.rowcount--,1)
+'			F.Intrinsic.Math.Add(v.Local.sPO,1,v.Local.sPO)
+'			F.Intrinsic.Control.CallSub(NewPurorder,"LnNo",v.Local.i,"PO",v.Local.sPO,"DTName","DTData","DVName","DVImport1")
+'			f.Intrinsic.Control.If(V.Local.sPURORDER,=,"")
+'				V.Local.sPURORDER.Set(v.Args.POTEXT)
+'			f.Intrinsic.Control.else
+'				f.Intrinsic.String.Build("{0}{1}{2}",V.Local.sPURORDER,V.Ambient.NewLine,V.Args.POTEXT,V.Local.sPURORDER)
+'			f.Intrinsic.Control.EndIf 
+'			F.Intrinsic.String.LPad(v.Local.sPO,"0",7,V.Local.sPO)
+'			f.Data.DataView.SetValue("DTData","DVImport1",v.Local.i,"POCreated",v.Local.sPO)
+'		f.Intrinsic.Control.Next(v.Local.i)
+
+v.Local.sLastVendor.Declare
+v.Local.lPOLineNO.Declare
+
+
+		f.Data.DataView.SetFilter("DTData","DVImport1","StandAlonePOQTY>0 and Vendor <> '' and select=true")
+'		f.Data.DataView.SetSort("DTData","DVImport1","Vendor")
+		
+'		f.Intrinsic.Control.If(v.DataView.DTData!DVImport1.rowcount,>,0)
+'			v.Local.sLastVendor.Set(v.DataView.DTData!DVImport1(0).Vendor.fieldvaltrim)
+'		f.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.For(v.Local.i,0,v.DataView.DTData!DVImport1.rowcount--,1)
+			f.Intrinsic.Control.If(v.Local.sLastVendor,<>,v.DataView.DTData!DVImport1(v.Local.i).Vendor.fieldvaltrim)
+				F.Intrinsic.Math.Add(v.Local.sPO,1,v.Local.sPO)
+				v.Local.lPOLineNO.Set(1)
+				v.Local.sLastVendor.Set(v.DataView.DTData!DVImport1(v.Local.i).Vendor.fieldvaltrim)
+			f.Intrinsic.Control.else
+				F.Intrinsic.Math.Add(v.Local.lPOLineNO,1,v.Local.lPOLineNO)
+			f.Intrinsic.Control.endif
+		
+			F.Intrinsic.Control.CallSub(NewPurorder,"LnNo",v.Local.i,"PO",v.Local.sPO,"DTName","DTData","DVName","DVImport1","POLINE",v.Local.lPOLineNO)
+			f.Intrinsic.Control.If(V.Local.sPURORDER,=,"")
+				V.Local.sPURORDER.Set(v.Args.POTEXT)
+			f.Intrinsic.Control.else
+				f.Intrinsic.String.Build("{0}{1}{2}",V.Local.sPURORDER,V.Ambient.NewLine,V.Args.POTEXT,V.Local.sPURORDER)
+			f.Intrinsic.Control.EndIf 
+'				F.Intrinsic.String.LPad(v.Local.sPO,"0",7,V.Local.sPO)
+			f.Data.DataView.SetValue("DTData","DVImport1",v.Local.i,"POCreated",v.Local.sPO)
+		f.Intrinsic.Control.Next(v.Local.i)
+		
+		f.Data.DataView.SetFilter("DTBLANKETDET","DVBlanket","POREMQty>0")
+		F.Intrinsic.Control.For(v.Local.i,0,v.DataView.DTBLANKETDET!DVBlanket.rowcount--,1)
+			F.Intrinsic.Math.Add(v.Local.sPO,1,v.Local.sPO)
+			v.Local.lPOLineNO.Set(1)
+			F.Intrinsic.Control.CallSub(NewPurorder,"LnNo",v.Local.i,"PO",v.Local.sPO,"DTName","DTBLANKETDET","DVName","DVBlanket","POLINE",v.Local.lPOLineNO)
+			f.Intrinsic.Control.If(V.Local.sPURORDER,=,"")
+				V.Local.sPURORDER.Set(v.Args.POTEXT)
+			f.Intrinsic.Control.endif
+		f.Intrinsic.String.Build("{0}{1}{2}",V.Local.sPURORDER,V.Ambient.NewLine,V.Args.POTEXT,V.Local.sPURORDER)
+'			f.Data.DataTable.SetValue("DTPO",v.Local.i,"PO",v.Local.sPO)
+		f.Intrinsic.Control.Next(v.Local.i)
+
+		'update Last PO number used
+		F.Intrinsic.String.LPad(v.Local.sPO,"0",7,v.Local.sPO)
+		F.Intrinsic.String.Concat("Update LAST_PO Set LAST_PO_NUM= '",v.Local.sPO,"' where ASS_SYS='PUR' and ASS_SUB_SYS='CTL' ",V.Local.sSql)
+		F.ODBC.Connection!Conx.Execute(V.Local.sSql)
+
+		'Write PO info to PURORDER.txt
+		F.Intrinsic.String.Concat(V.Caller.FilesDir,"\PURORDER.txt",V.Local.sFName)
+		F.Intrinsic.File.String2File(V.Local.sFName,V.Local.sPURORDER)
+
+		F.Global.Callwrapper.New("POUpload","Purchasing.PurchaseOrderUpload")
+		F.Global.Callwrapper.SetProperty("POUpload","Mode",0)
+		'F.Global.Callwrapper.SetProperty("POUpload","FileName",V.Local.sFName)
+		F.Global.Callwrapper.SetProperty("POUpload","FileName","PURORDER")
+		F.Global.CallWrapper.Run("POUpload")
+
+		F.Global.CallWrapper.GetProperty("POUpload","Status",V.Local.sStatus)
+
+		f.Intrinsic.Control.If(V.Local.sStatus,<>,"Success")
+			f.Intrinsic.UI.Msgbox("{Po Creation Error")
+			f.Intrinsic.UI.CloseWaitDialog
+			f.Intrinsic.Control.UnBlockEvents 
+			F.Intrinsic.Control.ExitSub
+		f.Intrinsic.Control.EndIf
+		
+		f.Intrinsic.UI.Msgbox("PO Created Successfully")
+
+'		F.Global.CallWrapper.GetProperty("POUpload","ReturnFileName",V.Local.sReturnFileName)
+
+'		f.Data.DataView.Create("DTLines","DVPO")
+'		F.Intrinsic.Control.For(v.Local.i,0,v.DataTable.DTPO.rowcount--,1)
+'			f.Intrinsic.String.Build("Filname='{0}'",v.DataTable.DTPO(v.Local.i).Filname.fieldval,v.Local.sfilter)
+'			Function.Data.DataView.SetFilter("DTLines","DVPO",v.Local.sFilter)
+'			F.Intrinsic.Control.If(Variable.DataView.DTLines!DVPO.rowcount,>,0)
+'				F.Intrinsic.String.LPad(v.DataTable.DTPO(v.Local.i).PO.fieldval,"0",7,V.Local.sPO)
+'				Function.Data.Dataview.SetValue("DTLines","DVPO",-1,"PO_NO",V.Local.sPO)
+'			Function.Intrinsic.Control.EndIf	
+'		f.Intrinsic.Control.Next(v.Local.i)
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+	
+Program.Sub.CreatePO.End
+
+Program.Sub.GetGLAcct.Start
+f.Intrinsic.Control.Try
+
+v.Local.iReturnCode.Declare(Long)
+v.Local.sAccount.Declare(String)
+v.Local.sReturnProductLine.Declare(String)
+
+'read the GL Account for vendor based on hierarchy
+F.Global.Callwrapper.New("Test","Purchasing.GetAccountPurchaseOrder")
+F.Global.Callwrapper.SetProperty("Test","Part",v.Args.POPart)
+F.Global.Callwrapper.SetProperty("Test","Location",v.Args.LOC)
+F.Global.Callwrapper.SetProperty("Test","PurchaseOrderNumber",v.Args.PO)
+F.Global.Callwrapper.SetProperty("Test","PurchaseOrderLine",v.Args.LN)
+F.Global.Callwrapper.SetProperty("Test","ProductLine",v.Args.PRL)
+F.Global.CallWrapper.Run("Test")
+
+F.Global.CallWrapper.GetProperty("Test","ReturnCode",V.Local.iReturnCode)
+f.Intrinsic.Control.If(V.Local.iReturnCode,=,0)
+	F.Global.CallWrapper.GetProperty("Test","Account",V.Local.sAccount)
+	f.Intrinsic.Variable.AddRV("GLACCT",V.Local.sAccount)
+f.Intrinsic.Control.Else
+	F.Intrinsic.Debug.SetLA(V.Local.iReturnCode)
+	f.Intrinsic.Variable.AddRV("GLACCT","")
+f.Intrinsic.Control.EndIf 
+
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.GetGLAcct.End
+
+Program.Sub.GetForecast_Data.Start
+f.Intrinsic.Control.Try
+v.Local.i.Declare
+V.Local.sFieldname.Declare
+V.Local.sRet.Declare
+V.Local.sRetTemp.Declare
+v.Local.lcurmonth.Declare
+v.Local.lcuryear.Declare
+v.Local.sCurmonth.Declare
+v.Local.sForcastNO.Declare
+v.Local.dtDate.Declare(date)
+v.Local.sSQL.Declare
+
+
+	f.Data.DataTable.Create("DTForecastSave")
+	f.Data.DataTable.AddColumn("DTForecastSave","Part","string")
+	f.Data.DataTable.AddColumn("DTForecastSave","Loc","string")
+	f.Data.DataTable.AddColumn("DTForecastSave","ForcastQty","long")
+	f.Data.DataTable.AddColumn("DTForecastSave","FO_DUE_DATE","string")
+	f.Data.DataTable.AddColumn("DTForecastSave","FO_NUMBER","string")
+	
+	
+	F.Intrinsic.Control.If(V.Dataview.DTData!DVData.Exists,=,false)
+		f.Data.DataView.Create("DTData","DVData")
+	f.Intrinsic.Control.EndIf
+
+
+	
+	
+
+	f.Intrinsic.Control.For(v.Local.i,1,12,1)
+		f.Intrinsic.String.Build("Part*!*LOC*!*Month_{0}",v.Local.i,V.Local.sFieldname)
+		f.Data.DataView.ToString("DTData","DVData",V.Local.sFieldname,"*!*",v.Ambient.NewLine,V.Local.sRetTemp)
+		
+
+		F.Intrinsic.Control.If(V.DataTable.DTTemp.Exists)
+			f.Data.DataTable.Close("DTTemp")
+		f.Intrinsic.Control.EndIf
+
+		f.Intrinsic.String.Build("Part*!*LOC*!*ForcastQty",v.Local.i,V.Local.sFieldname)
+		f.Data.DataTable.CreateFromString("DTTemp",V.Local.sRetTemp,V.Local.sFieldname,"string*!*string*!*long","*!*",v.Ambient.NewLine)
+		f.Data.DataTable.AddColumn("DTTemp","FO_DUE_DATE","string")
+		f.Data.DataTable.AddColumn("DTTemp","FO_NUMBER","string")
+		
+
+		F.Intrinsic.Date.month(V.Ambient.Date,v.Local.lcurmonth)
+		F.Intrinsic.Date.year(V.Ambient.Date,v.Local.lcuryear)
+		
+		f.Intrinsic.Control.If(v.Local.i,<,v.Local.lcurmonth)
+			f.Intrinsic.Math.Add(v.Local.lcuryear,1,v.Local.lcuryear)
+		f.Intrinsic.Control.endif
+
+
+		
+		f.Intrinsic.String.Build("{0}/01/{1}",v.Local.i,v.Local.lcuryear,v.Local.dtDate)
+		f.Data.DataTable.SetValue("DTTemp",-1,"FO_DUE_DATE",v.Local.dtDate.formatMMDDYY)
+		
+		f.Intrinsic.String.LPad(v.Local.i,"0",6,v.Local.sForcastNO)
+		f.Data.DataTable.SetValue("DTTemp",-1,"FO_NUMBER",v.Local.sForcastNO)
+		
+		f.Data.DataTable.Merge("DTTemp","DTForecastSave",True,2)
+	f.Intrinsic.Control.Next(v.Local.i)
+
+	f.Data.DataTable.AddColumn("DTForecastSave","FO_ORD_DATE","string")
+	f.Data.DataTable.AddColumn("DTForecastSave","FO_START_DATE","string")
+	f.Data.DataTable.SetValue("DTForecastSave",-1,"FO_ORD_DATE",v.Ambient.Date.FormatYYMMDD)
+
+	f.Data.DataTable.SetValue("DTForecastSave",-1,"FO_START_DATE",v.Ambient.Date.FormatMMDDYY)
+	
+	f.ODBC.Connection!conx.execute("delete from FORECAST_REQ")
+	F.Data.DataTable.SaveToDB("DTForecastSave","conx","FORECAST_REQ","part*!*loc",128,"part@!@FO_PART*!*loc@!@FO_LOCN*!*FO_NUMBER@!@FO_NUMBER*!*FO_ORD_DATE@!@FO_ORD_DATE*!*ForcastQty@!@FO_QTY_ORD*!*FO_DUE_DATE@!@FO_DATE_DUE*!*FO_START_DATE@!@FO_START_DATE")
+	f.Intrinsic.Math.Add(v.Local.sForcastNO.Long,1,v.Local.sForcastNO)
+	f.Intrinsic.String.Build("update OP_HEADER set F_Numeric = {0} where id = '360019'",v.Local.sForcastNO.long,v.Local.sSQL)
+	f.ODBC.Connection!conx.execute(v.Local.sSQL)
+	
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.GetForecast_Data.End
+
+Program.Sub.cmdCutoffRefresh_Click.Start
+f.Intrinsic.Control.Try
+
+f.Intrinsic.Control.If(v.Caller.Switches,=,"WO")
+'WO Generate Dashboard
+	f.Intrinsic.Control.CallSub(Load_GridWO)
+f.Intrinsic.Control.ElseIf(v.Caller.Switches,=,"PO")
+'PO Generate Dashboard
+	gui.frmWO.cmdWOGEN.Caption("Generate PO")
+	f.Intrinsic.Control.CallSub(Load_GridPO)
+f.Intrinsic.Control.endif
+gui.frmWO.cmdWOGEN.visible(true)
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.cmdCutoffRefresh_Click.End
+
+
+Program.Sub.GsGridWO_RowCellClick.Start
+f.Intrinsic.Control.Try
+
+f.Intrinsic.Control.BlockEvents 
+
+V.Local.sPart.Declare
+V.Local.sRev.Declare
+V.Local.sLoc.Declare
+v.Local.iCol.Declare
+
+
+f.Intrinsic.Control.SelectCase(v.Args.column.UCase)
+f.Intrinsic.Control.Case("PART")
+	Function.Intrinsic.UI.InvokeWaitDialog("Opening SD Screen ....") 
+	
+	gui.frmWO.GsGridWO.GetColumnIndexByName("GridView","PartLoc",v.Local.iCol)
+	gui.frmWO.GsGridWO.GetCellValue("GridView",v.Local.iCol,V.Args.RowIndex,V.Local.sPart)
+
+	f.Intrinsic.String.Mid(V.Local.sPart,21,2,v.Local.sLoc)
+	f.Intrinsic.String.Mid(V.Local.sPart,18,3,v.Local.sRev)
+	f.Intrinsic.String.Mid(V.Local.sPart,1,17,v.Local.sPart)
+	
+	F.Global.Inventory.CallSD(V.Local.sPart,V.Local.sRev,V.Local.sLoc,V.Caller.CompanyCode)
+	
+f.Intrinsic.Control.CaseElse 
+
+f.Intrinsic.Control.EndSelect 
+
+f.Intrinsic.Control.UnBlockEvents 
+
+Function.Intrinsic.UI.CloseWaitDialog
+
+
+f.Intrinsic.Control.Catch
+	F.Intrinsic.UI.CloseWaitDialog
+		f.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+	f.Intrinsic.Control.EndTry
+Program.Sub.GsGridWO_RowCellClick.End
+
+
+
+Program.Sub.Comments.Start
+${$0$}$$}$SUPERVSR$}$12/25/2019 11:33:41 AM$}$True
+Program.Sub.Comments.End
